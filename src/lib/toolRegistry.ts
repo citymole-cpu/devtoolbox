@@ -195,6 +195,7 @@ export const categories: CategoryInfo[] = [
       { id: 'random-generator', name: '随机数据批量生成', description: '批量生成中文姓名、手机号、邮箱、IP、MAC 地址等测试样本', path: '/text/random-generator', icon: Shuffle, keywords: ['随机生成', '随机姓名', '随机手机号', '随机邮箱', '测试数据', 'mock'] },
       { id: 'lorem-ipsum', name: 'Lorem Ipsum 生成器', description: '一键生成英文占位文本（段落 / 句子 / 单词），用于排版与原型填充', path: '/text/lorem-ipsum', icon: FileText, keywords: ['lorem', 'lorem ipsum', '占位文本', '假文', '排版', '填充文本'] },
       { id: 'slug', name: 'Slug 生成器', description: '标题转 URL 友好短链接：中文自动转拼音，去除特殊字符', path: '/text/slug', icon: Link, keywords: ['slug', '短链接', 'url别名', '拼音转slug', '标题转链接', 'seo'] },
+      { id: 'markdown-table', name: 'Markdown 表格生成器', description: '可视化编辑表格，一键生成标准 Markdown 表格，支持 CSV 粘贴导入', path: '/text/markdown-table', icon: Table, keywords: ['markdown', '表格', 'table', 'md表格', 'csv', '表格生成', 'markdown表格'] },
     ],
   },
   {

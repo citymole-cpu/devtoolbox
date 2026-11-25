@@ -99,6 +99,7 @@ const MarsText = lazy(() => import('./pages/text/MarsText'))
 const RandomGenerator = lazy(() => import('./pages/text/RandomGenerator'))
 const LoremIpsum = lazy(() => import('./pages/text/LoremIpsum'))
 const SlugGenerator = lazy(() => import('./pages/text/SlugGenerator'))
+const MarkdownTable = lazy(() => import('./pages/text/MarkdownTable'))
 
 // Media Tools
 const ImageCrop = lazy(() => import('./pages/image/ImageCrop'))
@@ -264,6 +265,7 @@ export default function App() {
         <Route path="/text/random-generator" element={<RandomGenerator />} />
         <Route path="/text/lorem-ipsum" element={<LoremIpsum />} />
         <Route path="/text/slug" element={<SlugGenerator />} />
+        <Route path="/text/markdown-table" element={<MarkdownTable />} />
 
         {/* Media */}
         <Route path="/media/image-crop" element={<ImageCrop />} />

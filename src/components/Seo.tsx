@@ -10,18 +10,18 @@ const SITE_URL = 'https://zapbits.xyz/tools'
 const SITE_NAME = 'DevToolBox'
 
 const HOME_TITLE: Record<string, string> = {
-  'zh-CN': 'DevToolBox - 免费在线开发者工具箱 | 137个工具',
-  'en-US': 'DevToolBox - Free Online Developer Toolbox | 137 Tools',
-  'ja-JP': 'DevToolBox - 無料オンライン開発者ツールボックス | 137ツール',
+  'zh-CN': 'DevToolBox - 免费在线开发者工具箱 | 138个工具',
+  'en-US': 'DevToolBox - Free Online Developer Toolbox | 138 Tools',
+  'ja-JP': 'DevToolBox - 無料オンライン開発者ツールボックス | 138ツール',
 }
 
 const HOME_DESC: Record<string, string> = {
   'zh-CN':
-    'DevToolBox - 免费在线开发者工具箱：JSON格式化、编解码、加密哈希、格式转换、文本处理、图片处理等137个实用工具，全部在浏览器本地运行，无需上传，安全免费。',
+    'DevToolBox - 免费在线开发者工具箱：JSON格式化、编解码、加密哈希、格式转换、文本处理、图片处理等138个实用工具，全部在浏览器本地运行，无需上传，安全免费。',
   'en-US':
-    'DevToolBox - free online developer toolbox: 137 handy tools for JSON formatting, encoding, encryption & hashing, format conversion, text and image processing. Everything runs locally in your browser, no uploads.',
+    'DevToolBox - free online developer toolbox: 138 handy tools for JSON formatting, encoding, encryption & hashing, format conversion, text and image processing. Everything runs locally in your browser, no uploads.',
   'ja-JP':
-    'DevToolBox - 無料オンライン開発者ツールボックス：JSON 整形、エンコード、暗号化・ハッシュ、フォーマット変換、テキスト・画像処理など 137 の便利なツール。すべてブラウザでローカルに動作します。',
+    'DevToolBox - 無料オンライン開発者ツールボックス：JSON 整形、エンコード、暗号化・ハッシュ、フォーマット変換、テキスト・画像処理など 138 の便利なツール。すべてブラウザでローカルに動作します。',
 }
 
 const TOOL_SUFFIX: Record<string, string> = {
