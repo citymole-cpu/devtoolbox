@@ -71,6 +71,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/crypto/bcrypt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/crypto/crc32</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -112,6 +117,16 @@
   </url>
   <url>
     <loc>https://zapbits.xyz/tools/crypto/uuid</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zapbits.xyz/tools/css/flexbox</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zapbits.xyz/tools/css/grid</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -476,12 +491,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/net/dns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/net/htpasswd</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zapbits.xyz/tools/net/http-client</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zapbits.xyz/tools/net/ip</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

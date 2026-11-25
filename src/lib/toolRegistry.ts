@@ -30,6 +30,10 @@ import {
   Server,
   DownloadCloud,
   Home,
+  LayoutTemplate,
+  Columns3,
+  LayoutGrid,
+  MapPin,
 } from 'lucide-react'
 
 export interface ToolInfo {
@@ -101,6 +105,8 @@ export const categories: CategoryInfo[] = [
       { id: 'websocket', name: 'WebSocket 在线测试', description: '在线连接 ws/wss 并实时收发消息调试', path: '/net/websocket', icon: RadioTower, keywords: ['ws', 'wss', 'websocket', '长连接', '测试', '调试'] },
       { id: 'robots-gen', name: 'Robots.txt 爬虫协议生成', description: '百度/谷歌/必应爬虫规范在线配置与 sitemap 声明', path: '/net/robots', icon: Globe, keywords: ['robots', '爬虫', '百度蜘蛛', 'googlebot', '搜索引擎', 'sitemap'] },
       { id: 'htpasswd-gen', name: '在线 .htpasswd 认证生成', description: 'Nginx 与 Apache HTTP 基础认证密码列表生成', path: '/net/htpasswd', icon: KeyRound, keywords: ['htpasswd', 'basic auth', 'nginx认证', 'apache认证', '密码生成'] },
+      { id: 'dns-lookup', name: 'DNS 查询', description: '通过 DoH 在线查询域名 A / AAAA / CNAME / MX / TXT 等记录', path: '/net/dns', icon: Globe, keywords: ['dns', '域名解析', 'doh', 'a记录', 'mx记录', 'txt记录', 'cname'] },
+      { id: 'ip-lookup', name: 'IP 查询', description: '查询公网 IP 的归属地、运营商、ASN 与时区', path: '/net/ip', icon: MapPin, keywords: ['ip', 'ip查询', '归属地', '运营商', 'asn', '本机ip', '公网ip'] },
     ],
   },
   {
@@ -134,6 +140,7 @@ export const categories: CategoryInfo[] = [
       { id: 'uuid', name: 'UUID 生成器', description: '生成 UUID / GUID 唯一标识符', path: '/crypto/uuid', icon: Fingerprint, keywords: ['uuid', 'guid', '生成', '唯一', '标识'] },
       { id: 'file-hash', name: '文件哈希与校验', description: '离线秒级计算大文件 MD5/SHA-1/SHA-256 校验码与防篡改验证', path: '/crypto/file-hash', icon: ShieldCheck, keywords: ['文件哈希', '文件md5', 'sha256', '防篡改', '文件校验'] },
       { id: 'password-strength', name: '密码强度检测器', description: '本地检测密码强度：规则评分、熵值与破解耗时估算', path: '/crypto/password-strength', icon: ShieldCheck, keywords: ['密码强度', '密码检测', 'password strength', '熵值', '弱密码', '安全'] },
+      { id: 'bcrypt', name: 'bcrypt 生成器', description: '纯前端生成与验证 bcrypt 密码哈希，支持 cost 调节', path: '/crypto/bcrypt', icon: Lock, keywords: ['bcrypt', '密码哈希', 'hash', '加密', '密码存储', '加盐'] },
     ],
   },
   {
@@ -151,6 +158,16 @@ export const categories: CategoryInfo[] = [
       { id: 'header-cookie', name: 'Headers / Cookie 格式化', description: 'HTTP 请求头、Cookie 与 URL Get 参数解析与转 JSON', path: '/format/header-cookie', icon: ArrowLeftRight, keywords: ['headers', 'cookie', 'query参数', '请求头', '参数解析'] },
       { id: 'sql-format', name: 'SQL 格式化', description: 'SQL 语句格式化与美化', path: '/format/sql', icon: Database, keywords: ['sql', '格式化', 'format', 'beautify', '数据库'] },
       { id: 'xml-format', name: 'XML 格式化', description: 'XML 文档格式化与压缩', path: '/format/xml', icon: TypeIcon, keywords: ['xml', '格式化', '压缩', 'format', 'beautify'] },
+    ],
+  },
+  {
+    id: 'css',
+    name: 'CSS 布局',
+    icon: LayoutTemplate,
+    color: 'text-violet-500',
+    tools: [
+      { id: 'flexbox-generator', name: 'Flexbox 布局生成器', description: '可视化调整 Flexbox 容器属性，实时预览并生成 CSS 代码', path: '/css/flexbox', icon: Columns3, keywords: ['flexbox', 'flex', '弹性布局', 'css布局', 'flex-direction', 'justify-content'] },
+      { id: 'grid-generator', name: 'Grid 布局生成器', description: '可视化配置 CSS Grid 行列、间距与对齐，实时预览并生成 CSS 代码', path: '/css/grid', icon: LayoutGrid, keywords: ['grid', 'css grid', '网格布局', 'css布局', 'grid-template', '响应式'] },
     ],
   },
   {

@@ -1,6 +1,6 @@
-# DevToolBox — Free Online Developer Toolbox (132 Tools)
+# DevToolBox — Free Online Developer Toolbox (137 Tools)
 
-> All-in-one free online developer toolbox: 132 tools for JSON, encoding, encryption, code formatting, text, images and everyday dev work. 100% client-side — your data never leaves your browser. No sign-up, no upload, no tracking.
+> All-in-one free online developer toolbox: 137 tools for JSON, encoding, encryption, code formatting, text, images and everyday dev work. 100% client-side — your data never leaves your browser. No sign-up, no upload, no tracking.
 
 **Live demo: https://zapbits.xyz/tools/**
 
@@ -9,8 +9,8 @@
 ## Why DevToolBox
 
 - **Private by design** — every tool runs entirely in your browser. JSON formatting, encryption, image processing and file hashing never touch a server.
-- **132 tools, one place** — no more hunting across ten different sites for a formatter, an encoder and a generator.
-- **Fast** — `Ctrl + K` (or `Cmd + K`) fuzzy-searches all 132 tools in under a second.
+- **137 tools, one place** — no more hunting across ten different sites for a formatter, an encoder and a generator.
+- **Fast** — `Ctrl + K` (or `Cmd + K`) fuzzy-searches all 137 tools in under a second.
 - **Free forever** — no account, no paywall for core tools, no ads interrupting your work.
 - **Works everywhere** — dark mode, mobile-friendly, and deployable anywhere as a static site or Docker container.
 
@@ -28,7 +28,7 @@
 | Network & APIs | HTTP Client, WebSocket Tester, CIDR Calculator, Robots.txt Generator |
 | Daily helpers | Timestamp Converter, Cron Expression Builder, Password Generator, Color Converter, Unit Converter |
 
-Full list: 10 categories, 132 tools — see the live site or browse `src/lib/toolRegistry.ts`.
+Full list: 11 categories, 137 tools — see the live site or browse `src/lib/toolRegistry.ts`.
 
 ## Categories
 
@@ -72,14 +72,14 @@ Found a bug or want a new tool? Open an issue or a pull request — new tools on
 
 ---
 
-## DevToolBox — 免费在线开发者工具箱（132 个工具）
+## DevToolBox — 免费在线开发者工具箱（137 个工具）
 
-一站式免费在线开发者工具箱：132 个工具，覆盖 JSON、编解码、加解密、代码格式化、文本处理、图片媒体与日常开发辅助。**100% 纯前端运行，数据不上传服务器**，不用注册，不用登录。
+一站式免费在线开发者工具箱：137 个工具，覆盖 JSON、编解码、加解密、代码格式化、文本处理、图片媒体与日常开发辅助。**100% 纯前端运行，数据不上传服务器**，不用注册，不用登录。
 
 **在线使用：https://zapbits.xyz/tools/**
 
 - **隐私优先**：所有计算都在浏览器本地完成，粘贴的内容不会发送到任何服务器。
-- **132 个工具**：JSON 格式化校验、Base64 编解码、JWT 解析、MD5/SHA 哈希、AES 加解密、正则测试、二维码生成、时间戳转换、Cron 表达式、SQL 格式化、图片压缩裁剪等，一个站全搞定。
+- **137 个工具**：JSON 格式化校验、Base64 编解码、JWT 解析、MD5/SHA 哈希、AES 加解密、正则测试、二维码生成、时间戳转换、Cron 表达式、SQL 格式化、图片压缩裁剪等，一个站全搞定。
 - **快**：`Ctrl + K` 全局搜索，秒级定位工具。
 - **免费**：核心工具全部免费，无需账号。
 - **随处部署**：纯静态输出，支持 Docker / Nginx 一键部署。

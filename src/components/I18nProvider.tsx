@@ -49,6 +49,7 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
       case 'encode': return t.catEncode;
       case 'crypto': return t.catCrypto;
       case 'format': return t.catFormat;
+      case 'css': return t.catCss;
       case 'text': return t.catText;
       case 'media': return t.catImage;
       case 'ref': return t.catRef;

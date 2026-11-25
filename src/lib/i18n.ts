@@ -48,6 +48,7 @@ export interface TranslationDictionary {
   catEncode: string;
   catCrypto: string;
   catFormat: string;
+  catCss: string;
   catText: string;
   catImage: string;
   catRef: string;
@@ -89,9 +90,9 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: '深色模式 · 护眼沉浸',
     featureSearch: 'Ctrl+K 全局快速搜索',
     heroTitle: '开发者工具箱',
-    heroSubtitle: '全套 132 个常用开发工具，覆盖 JSON、编解码、加解密、格式转换、图片媒体、文本处理与速查对照，100% 离线运行。',
+    heroSubtitle: '全套 137 个常用开发工具，覆盖 JSON、编解码、加解密、格式转换、图片媒体、文本处理与速查对照，100% 离线运行。',
     homeIntroTitle: '关于 DevToolBox',
-    homeIntroP1: 'DevToolBox 是一个免费在线开发者工具箱，提供 132 个常用工具，涵盖 JSON 处理、格式转换、编解码、加密哈希、代码格式化、文本处理、图片处理和开发速查。所有工具都在浏览器本地运行，数据不会上传到任何服务器，打开即用，无需注册登录。',
+    homeIntroP1: 'DevToolBox 是一个免费在线开发者工具箱，提供 137 个常用工具，涵盖 JSON 处理、格式转换、编解码、加密哈希、代码格式化、文本处理、图片处理和开发速查。所有工具都在浏览器本地运行，数据不会上传到任何服务器，打开即用，无需注册登录。',
     homeIntroP2: '无论是格式化一段 JSON、生成二维码、计算文件哈希，还是查询 HTTP 状态码、转换时间戳，都可以在这里一键完成。支持深色模式、快捷键搜索（Ctrl+K）和中英日三语界面，手机和电脑都能用。',
 
     catJson: 'JSON 工具',
@@ -100,6 +101,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     catEncode: '编码解码',
     catCrypto: '加密解密',
     catFormat: '代码格式化',
+    catCss: 'CSS 布局',
     catText: '文本与代码处理',
     catImage: '图片与多媒体',
     catRef: '开发参考速查',
@@ -139,9 +141,9 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: 'Dark Mode Support',
     featureSearch: 'Ctrl+K Quick Search',
     heroTitle: 'Developer Toolbox',
-    heroSubtitle: '132 offline developer utilities: JSON, encoders, cryptography, converters, image media, and technical references.',
+    heroSubtitle: '137 offline developer utilities: JSON, encoders, cryptography, converters, image media, and technical references.',
     homeIntroTitle: 'About DevToolBox',
-    homeIntroP1: 'DevToolBox is a free online developer toolbox with 132 handy tools for JSON, format conversion, encoding, encryption & hashing, code formatting, text processing, image tools and quick references. Every tool runs locally in your browser — no uploads, no sign-up, just open and use.',
+    homeIntroP1: 'DevToolBox is a free online developer toolbox with 137 handy tools for JSON, format conversion, encoding, encryption & hashing, code formatting, text processing, image tools and quick references. Every tool runs locally in your browser — no uploads, no sign-up, just open and use.',
     homeIntroP2: 'Format a JSON snippet, generate a QR code, hash a file, look up HTTP status codes or convert a timestamp — it is all one click away. Dark mode, Ctrl+K quick search and Chinese, English and Japanese interfaces work on desktop and mobile.',
 
     catJson: 'JSON Utilities',
@@ -150,6 +152,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     catEncode: 'Encoders & Decoders',
     catCrypto: 'Cryptography & Hashes',
     catFormat: 'Code Formatters',
+    catCss: 'CSS Layout',
     catText: 'Text & Regex Tools',
     catImage: 'Image & Media',
     catRef: 'Quick References',
@@ -189,9 +192,9 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: '目に優しいダークモード',
     featureSearch: 'Ctrl+K 高速インクリメンタル検索',
     heroTitle: '開発者ツールボックス',
-    heroSubtitle: 'JSON整形、暗号化、エンコード/デコード、画像処理、コマンド早見表など132の必須ツールをオフラインで一括提供。',
+    heroSubtitle: 'JSON整形、暗号化、エンコード/デコード、画像処理、コマンド早見表など137の必須ツールをオフラインで一括提供。',
     homeIntroTitle: 'DevToolBox について',
-    homeIntroP1: 'DevToolBox は 132 の便利なツールを備えた無料のオンラインデベロッパーツールボックスです。JSON 処理、フォーマット変換、エンコード、暗号化・ハッシュ、コード整形、テキスト処理、画像処理、リファレンスをカバーします。すべてのツールはブラウザ内でローカルに動作し、データがサーバーにアップロードされることはありません。登録不要で、開くだけで使えます。',
+    homeIntroP1: 'DevToolBox は 137 の便利なツールを備えた無料のオンラインデベロッパーツールボックスです。JSON 処理、フォーマット変換、エンコード、暗号化・ハッシュ、コード整形、テキスト処理、画像処理、リファレンスをカバーします。すべてのツールはブラウザ内でローカルに動作し、データがサーバーにアップロードされることはありません。登録不要で、開くだけで使えます。',
     homeIntroP2: 'JSON の整形、QR コードの生成、ファイルハッシュの計算、HTTP ステータスコードの確認、タイムスタンプの変換など、すべてワンクリックで完了します。ダークモード、Ctrl+K クイック検索、中国語・英語・日本語インターフェースに対応し、PC でもスマホでも使えます。',
 
     catJson: 'JSON ツール',
@@ -200,6 +203,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     catEncode: 'エンコード / デコード',
     catCrypto: '暗号化・ハッシュ',
     catFormat: 'コード整形',
+    catCss: 'CSS レイアウト',
     catText: 'テキスト・文字列処理',
     catImage: '画像＆メディア処理',
     catRef: '開発リファレンス・早見表',
@@ -741,6 +745,26 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "slug": {
     "name": "Slug Generator",
     "description": "Convert titles to URL-friendly slugs, Chinese to pinyin automatically"
+  },
+  "flexbox-generator": {
+    "name": "Flexbox Layout Generator",
+    "description": "Visually tweak Flexbox container properties with live preview and CSS output"
+  },
+  "grid-generator": {
+    "name": "Grid Layout Generator",
+    "description": "Visually configure CSS Grid rows, columns, gaps and alignment with live preview"
+  },
+  "dns-lookup": {
+    "name": "DNS Lookup",
+    "description": "Look up A / AAAA / CNAME / MX / TXT and other DNS records via DoH"
+  },
+  "ip-lookup": {
+    "name": "IP Lookup",
+    "description": "Look up a public IP's location, ISP, ASN and timezone"
+  },
+  "bcrypt": {
+    "name": "bcrypt Generator",
+    "description": "Generate and verify bcrypt password hashes entirely in your browser"
   }
 },
   'ja-JP': {
@@ -1275,6 +1299,26 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "slug": {
     "name": "スラッグ生成器",
     "description": "タイトルを URL 向けスラッグに変換、中国語はピンインに自動変換"
+  },
+  "flexbox-generator": {
+    "name": "Flexbox レイアウト生成器",
+    "description": "Flexbox コンテナの属性を視覚的に調整、リアルタイムプレビューと CSS 出力"
+  },
+  "grid-generator": {
+    "name": "Grid レイアウト生成器",
+    "description": "CSS Grid の行・列・間隔・配置を視覚的に設定、リアルタイムプレビュー"
+  },
+  "dns-lookup": {
+    "name": "DNS ルックアップ",
+    "description": "DoH で A / AAAA / CNAME / MX / TXT などの DNS レコードを照会"
+  },
+  "ip-lookup": {
+    "name": "IP アドレス照会",
+    "description": "公開 IP の所在地・ISP・ASN・タイムゾーンを照会"
+  },
+  "bcrypt": {
+    "name": "bcrypt 生成器",
+    "description": "bcrypt パスワードハッシュをブラウザ内で生成・検証"
   }
 }
 };

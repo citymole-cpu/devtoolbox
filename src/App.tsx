@@ -39,6 +39,8 @@ const CidrCalc = lazy(() => import('./pages/net/CidrCalc'))
 const WebSocketTester = lazy(() => import('./pages/net/WebSocketTester'))
 const RobotsGenerator = lazy(() => import('./pages/net/RobotsGenerator'))
 const Htpasswd = lazy(() => import('./pages/net/Htpasswd'))
+const DnsLookup = lazy(() => import('./pages/net/DnsLookup'))
+const IpLookup = lazy(() => import('./pages/net/IpLookup'))
 
 // Encode Tools
 const Base64 = lazy(() => import('./pages/encode/Base64'))
@@ -60,6 +62,7 @@ const Crc32 = lazy(() => import('./pages/crypto/Crc32'))
 const Uuid = lazy(() => import('./pages/crypto/Uuid'))
 const FileHash = lazy(() => import('./pages/crypto/FileHash'))
 const PasswordStrength = lazy(() => import('./pages/crypto/PasswordStrength'))
+const Bcrypt = lazy(() => import('./pages/crypto/Bcrypt'))
 
 // Format Tools
 const HtmlFormat = lazy(() => import('./pages/format/HtmlFormat'))
@@ -71,6 +74,10 @@ const CodeFormatUniversal = lazy(() => import('./pages/format/CodeFormatUniversa
 const HeaderCookieFormat = lazy(() => import('./pages/format/HeaderCookieFormat'))
 const SqlFormat = lazy(() => import('./pages/format/SqlFormat'))
 const XmlFormat = lazy(() => import('./pages/format/XmlFormat'))
+
+// CSS Layout Tools
+const FlexboxGenerator = lazy(() => import('./pages/css/FlexboxGenerator'))
+const GridGenerator = lazy(() => import('./pages/css/GridGenerator'))
 
 // Text Tools
 const TextDiff = lazy(() => import('./pages/text/TextDiff'))
@@ -197,6 +204,8 @@ export default function App() {
         <Route path="/net/websocket" element={<WebSocketTester />} />
         <Route path="/net/robots" element={<RobotsGenerator />} />
         <Route path="/net/htpasswd" element={<Htpasswd />} />
+        <Route path="/net/dns" element={<DnsLookup />} />
+        <Route path="/net/ip" element={<IpLookup />} />
 
         {/* Encode */}
         <Route path="/encode/base64" element={<Base64 />} />
@@ -218,6 +227,7 @@ export default function App() {
         <Route path="/crypto/uuid" element={<Uuid />} />
         <Route path="/crypto/file-hash" element={<FileHash />} />
         <Route path="/crypto/password-strength" element={<PasswordStrength />} />
+        <Route path="/crypto/bcrypt" element={<Bcrypt />} />
 
         {/* Format */}
         <Route path="/format/html" element={<HtmlFormat />} />
@@ -229,6 +239,10 @@ export default function App() {
         <Route path="/format/header-cookie" element={<HeaderCookieFormat />} />
         <Route path="/format/sql" element={<SqlFormat />} />
         <Route path="/format/xml" element={<XmlFormat />} />
+
+        {/* CSS Layout */}
+        <Route path="/css/flexbox" element={<FlexboxGenerator />} />
+        <Route path="/css/grid" element={<GridGenerator />} />
 
         {/* Text */}
         <Route path="/text/diff" element={<TextDiff />} />
