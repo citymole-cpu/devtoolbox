@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-600;
+  }
+}
+
+@layer components {
+  .editor-area {
+    @apply w-full min-h-[200px] p-4 rounded-lg border bg-gray-50 dark:bg-gray-900
+           font-mono text-sm leading-relaxed resize-y
+           focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500
+           placeholder:text-gray-400 dark:placeholder:text-gray-600
+           transition-colors duration-200;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg
+           font-medium text-sm transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700
+           focus:ring-brand-500 dark:focus:ring-offset-gray-900;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300
+           hover:bg-gray-200 dark:hover:bg-gray-700
+           focus:ring-gray-400 dark:focus:ring-offset-gray-900;
+  }
+
+  .btn-ghost {
+    @apply btn text-gray-600 dark:text-gray-400
+           hover:bg-gray-100 dark:hover:bg-gray-800
+           focus:ring-gray-400 dark:focus:ring-offset-gray-900;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .btn-icon {
+    @apply p-2 rounded-lg text-gray-500 dark:text-gray-400
+           hover:bg-gray-100 dark:hover:bg-gray-800
+           transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-900 rounded-xl border shadow-sm;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 rounded-lg border bg-white dark:bg-gray-900
+           text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/40
+           focus:border-brand-500 transition-colors duration-200;
+  }
+
+  .select-field {
+    @apply px-3 py-2 rounded-lg border bg-white dark:bg-gray-900
+           text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/40
+           focus:border-brand-500 transition-colors duration-200 cursor-pointer;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .error-text {
+    @apply text-red-600 dark:text-red-400 text-sm mt-2 flex items-center gap-1;
+  }
+}
+
+/* Smooth theme transition */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Diff styling */
+.diff-added {
+  @apply bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300;
+}
+.diff-removed {
+  @apply bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300;
+}
+
+/* Markdown preview */
+.markdown-preview {
+  line-height: 1.6;
+}
+.markdown-preview h1 {
+  @apply text-2xl font-bold my-4 pb-2 border-b;
+}
+.markdown-preview h2 {
+  @apply text-xl font-bold my-3 pb-1 border-b;
+}
+.markdown-preview h3 {
+  @apply text-lg font-semibold my-2;
+}
+.markdown-preview p {
+  @apply my-2;
+}
+.markdown-preview ul {
+  @apply list-disc list-inside my-2 space-y-1;
+}
+.markdown-preview ol {
+  @apply list-decimal list-inside my-2 space-y-1;
+}
+.markdown-preview blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-700 pl-4 italic my-2 text-gray-600 dark:text-gray-400;
+}
+.markdown-preview pre {
+  @apply bg-gray-100 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto;
+}
+.markdown-preview code {
+  @apply font-mono text-sm;
+}
+.markdown-preview table {
+  @apply w-full border-collapse;
+}
+.markdown-preview th,
+.markdown-preview td {
+  @apply border px-3 py-2 text-left;
+}
+
