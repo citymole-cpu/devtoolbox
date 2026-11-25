@@ -37,6 +37,9 @@ export interface TranslationDictionary {
   featureSearch: string;
   heroTitle: string;
   heroSubtitle: string;
+  homeIntroTitle: string;
+  homeIntroP1: string;
+  homeIntroP2: string;
 
   // Categories
   catJson: string;
@@ -86,7 +89,10 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: '深色模式 · 护眼沉浸',
     featureSearch: 'Ctrl+K 全局快速搜索',
     heroTitle: '开发者工具箱',
-    heroSubtitle: '全套 120+ 常用开发工具，覆盖 JSON、编解码、加解密、格式转换、图片媒体、文本处理与速查对照，100% 离线运行。',
+    heroSubtitle: '全套 132 个常用开发工具，覆盖 JSON、编解码、加解密、格式转换、图片媒体、文本处理与速查对照，100% 离线运行。',
+    homeIntroTitle: '关于 DevToolBox',
+    homeIntroP1: 'DevToolBox 是一个免费在线开发者工具箱，提供 132 个常用工具，涵盖 JSON 处理、格式转换、编解码、加密哈希、代码格式化、文本处理、图片处理和开发速查。所有工具都在浏览器本地运行，数据不会上传到任何服务器，打开即用，无需注册登录。',
+    homeIntroP2: '无论是格式化一段 JSON、生成二维码、计算文件哈希，还是查询 HTTP 状态码、转换时间戳，都可以在这里一键完成。支持深色模式、快捷键搜索（Ctrl+K）和中英日三语界面，手机和电脑都能用。',
 
     catJson: 'JSON 工具',
     catConvert: '格式转换',
@@ -133,7 +139,10 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: 'Dark Mode Support',
     featureSearch: 'Ctrl+K Quick Search',
     heroTitle: 'Developer Toolbox',
-    heroSubtitle: '120+ offline developer utilities: JSON, encoders, cryptography, converters, image media, and technical references.',
+    heroSubtitle: '132 offline developer utilities: JSON, encoders, cryptography, converters, image media, and technical references.',
+    homeIntroTitle: 'About DevToolBox',
+    homeIntroP1: 'DevToolBox is a free online developer toolbox with 132 handy tools for JSON, format conversion, encoding, encryption & hashing, code formatting, text processing, image tools and quick references. Every tool runs locally in your browser — no uploads, no sign-up, just open and use.',
+    homeIntroP2: 'Format a JSON snippet, generate a QR code, hash a file, look up HTTP status codes or convert a timestamp — it is all one click away. Dark mode, Ctrl+K quick search and Chinese, English and Japanese interfaces work on desktop and mobile.',
 
     catJson: 'JSON Utilities',
     catConvert: 'Format Converters',
@@ -180,7 +189,10 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: '目に優しいダークモード',
     featureSearch: 'Ctrl+K 高速インクリメンタル検索',
     heroTitle: '開発者ツールボックス',
-    heroSubtitle: 'JSON整形、暗号化、エンコード/デコード、画像処理、コマンド早見表など120以上の必須ツールをオフラインで一括提供。',
+    heroSubtitle: 'JSON整形、暗号化、エンコード/デコード、画像処理、コマンド早見表など132の必須ツールをオフラインで一括提供。',
+    homeIntroTitle: 'DevToolBox について',
+    homeIntroP1: 'DevToolBox は 132 の便利なツールを備えた無料のオンラインデベロッパーツールボックスです。JSON 処理、フォーマット変換、エンコード、暗号化・ハッシュ、コード整形、テキスト処理、画像処理、リファレンスをカバーします。すべてのツールはブラウザ内でローカルに動作し、データがサーバーにアップロードされることはありません。登録不要で、開くだけで使えます。',
+    homeIntroP2: 'JSON の整形、QR コードの生成、ファイルハッシュの計算、HTTP ステータスコードの確認、タイムスタンプの変換など、すべてワンクリックで完了します。ダークモード、Ctrl+K クイック検索、中国語・英語・日本語インターフェースに対応し、PC でもスマホでも使えます。',
 
     catJson: 'JSON ツール',
     catConvert: 'フォーマット変換',
@@ -713,6 +725,22 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "random-generator": {
     "name": "Random Data Batch Generator",
     "description": "Generate fake names, phones, credit cards, emails, and addresses"
+  },
+  "jwt-generator": {
+    "name": "JWT Generator",
+    "description": "Sign HS256 / HS384 / HS512 JWTs online and verify signatures"
+  },
+  "password-strength": {
+    "name": "Password Strength Checker",
+    "description": "Check password strength locally: rule scoring, entropy and crack-time estimate"
+  },
+  "lorem-ipsum": {
+    "name": "Lorem Ipsum Generator",
+    "description": "Generate placeholder text by paragraphs, sentences or words"
+  },
+  "slug": {
+    "name": "Slug Generator",
+    "description": "Convert titles to URL-friendly slugs, Chinese to pinyin automatically"
   }
 },
   'ja-JP': {
@@ -1231,6 +1259,22 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "random-generator": {
     "name": "ランダムデータ一括生成",
     "description": "氏名、電話番号、郵便番号、メール等のダミーテストデータ生成"
+  },
+  "jwt-generator": {
+    "name": "JWT 生成器",
+    "description": "HS256 / HS384 / HS512 の JWT をオンラインで発行・署名検証"
+  },
+  "password-strength": {
+    "name": "パスワード強度チェッカー",
+    "description": "パスワード強度をローカルで判定：ルール採点・エントロピー・解読時間の推定"
+  },
+  "lorem-ipsum": {
+    "name": "Lorem Ipsum 生成器",
+    "description": "段落・文・単語単位で英語のダミーテキストを生成"
+  },
+  "slug": {
+    "name": "スラッグ生成器",
+    "description": "タイトルを URL 向けスラッグに変換、中国語はピンインに自動変換"
   }
 }
 };

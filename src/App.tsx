@@ -46,6 +46,7 @@ const UrlEncode = lazy(() => import('./pages/encode/UrlEncode'))
 const Unicode = lazy(() => import('./pages/encode/Unicode'))
 const HtmlEntities = lazy(() => import('./pages/encode/HtmlEntities'))
 const Jwt = lazy(() => import('./pages/encode/Jwt'))
+const JwtGenerator = lazy(() => import('./pages/encode/JwtGenerator'))
 const Morse = lazy(() => import('./pages/encode/Morse'))
 
 // Crypto Tools
@@ -58,6 +59,7 @@ const Rsa = lazy(() => import('./pages/crypto/Rsa'))
 const Crc32 = lazy(() => import('./pages/crypto/Crc32'))
 const Uuid = lazy(() => import('./pages/crypto/Uuid'))
 const FileHash = lazy(() => import('./pages/crypto/FileHash'))
+const PasswordStrength = lazy(() => import('./pages/crypto/PasswordStrength'))
 
 // Format Tools
 const HtmlFormat = lazy(() => import('./pages/format/HtmlFormat'))
@@ -88,6 +90,8 @@ const DbcSbc = lazy(() => import('./pages/text/DbcSbc'))
 const TextReverse = lazy(() => import('./pages/text/TextReverse'))
 const MarsText = lazy(() => import('./pages/text/MarsText'))
 const RandomGenerator = lazy(() => import('./pages/text/RandomGenerator'))
+const LoremIpsum = lazy(() => import('./pages/text/LoremIpsum'))
+const SlugGenerator = lazy(() => import('./pages/text/SlugGenerator'))
 
 // Media Tools
 const ImageCrop = lazy(() => import('./pages/image/ImageCrop'))
@@ -200,6 +204,7 @@ export default function App() {
         <Route path="/encode/unicode" element={<Unicode />} />
         <Route path="/encode/html-entities" element={<HtmlEntities />} />
         <Route path="/encode/jwt" element={<Jwt />} />
+        <Route path="/jwt/generator" element={<JwtGenerator />} />
         <Route path="/encode/morse" element={<Morse />} />
 
         {/* Crypto */}
@@ -212,6 +217,7 @@ export default function App() {
         <Route path="/crypto/crc32" element={<Crc32 />} />
         <Route path="/crypto/uuid" element={<Uuid />} />
         <Route path="/crypto/file-hash" element={<FileHash />} />
+        <Route path="/crypto/password-strength" element={<PasswordStrength />} />
 
         {/* Format */}
         <Route path="/format/html" element={<HtmlFormat />} />
@@ -242,6 +248,8 @@ export default function App() {
         <Route path="/text/reverse" element={<TextReverse />} />
         <Route path="/text/mars" element={<MarsText />} />
         <Route path="/text/random-generator" element={<RandomGenerator />} />
+        <Route path="/text/lorem-ipsum" element={<LoremIpsum />} />
+        <Route path="/text/slug" element={<SlugGenerator />} />
 
         {/* Media */}
         <Route path="/media/image-crop" element={<ImageCrop />} />
@@ -306,6 +314,9 @@ export default function App() {
         <Route path="/misc/file-inspector" element={<FileInspector />} />
         <Route path="/misc/mock-data" element={<MockDataGenerator />} />
         <Route path="/misc/renovation-calc" element={<RenovationCalc />} />
+
+        {/* 未知路径兜底回首页 */}
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   )

@@ -3,6 +3,7 @@ import { Outlet, Link } from 'react-router-dom'
 import { Menu, X, Search, Sun, Moon, Wrench } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
 import { useI18n } from './I18nProvider'
+import { Seo } from './Seo'
 import { LanguageSelector } from './LanguageSelector'
 import { Sidebar } from './Sidebar'
 import { SearchDialog } from './SearchDialog'
@@ -29,6 +30,7 @@ export function Layout() {
 
   return (
     <div className="flex h-screen overflow-hidden">
+      <Seo />
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex flex-col w-64 border-r bg-gray-50/50 dark:bg-gray-900/50 overflow-y-auto flex-shrink-0">
         {/* Logo */}

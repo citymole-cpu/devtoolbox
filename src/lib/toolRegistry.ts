@@ -114,6 +114,7 @@ export const categories: CategoryInfo[] = [
       { id: 'unicode', name: 'Unicode 编解码', description: 'Unicode 与中文字符互相转换', path: '/encode/unicode', icon: Languages, keywords: ['unicode', '编码', '解码', '中文', 'utf'] },
       { id: 'html-entities', name: 'HTML 实体编解码', description: 'HTML 实体字符编码与解码', path: '/encode/html-entities', icon: Code2, keywords: ['html', '实体', 'entity', '编码', '解码', '&amp;'] },
       { id: 'jwt', name: 'JWT 解析', description: '解析和验证 JSON Web Token', path: '/encode/jwt', icon: Key, keywords: ['jwt', 'token', '解析', 'json web token', '令牌'] },
+      { id: 'jwt-generator', name: 'JWT 生成器', description: '在线签发 HS256 / HS384 / HS512 JWT 并验证签名', path: '/jwt/generator', icon: KeyRound, keywords: ['jwt', 'token', '生成', '签发', 'json web token', '令牌', 'hs256'] },
       { id: 'morse', name: '摩斯密码编解码', description: '文本与莫尔斯电码(Morse)双向互转与发声播放', path: '/encode/morse', icon: Radio, keywords: ['摩斯', '莫尔斯', 'morse', '电码', '密码', '嘀嗒'] },
     ],
   },
@@ -132,6 +133,7 @@ export const categories: CategoryInfo[] = [
       { id: 'crc32', name: 'CRC32 校验码', description: '计算数据与字符串的 CRC32 循环冗余校验值', path: '/crypto/crc32', icon: CheckCircle2, keywords: ['crc', 'crc32', '循环冗余校验', '校验码'] },
       { id: 'uuid', name: 'UUID 生成器', description: '生成 UUID / GUID 唯一标识符', path: '/crypto/uuid', icon: Fingerprint, keywords: ['uuid', 'guid', '生成', '唯一', '标识'] },
       { id: 'file-hash', name: '文件哈希与校验', description: '离线秒级计算大文件 MD5/SHA-1/SHA-256 校验码与防篡改验证', path: '/crypto/file-hash', icon: ShieldCheck, keywords: ['文件哈希', '文件md5', 'sha256', '防篡改', '文件校验'] },
+      { id: 'password-strength', name: '密码强度检测器', description: '本地检测密码强度：规则评分、熵值与破解耗时估算', path: '/crypto/password-strength', icon: ShieldCheck, keywords: ['密码强度', '密码检测', 'password strength', '熵值', '弱密码', '安全'] },
     ],
   },
   {
@@ -174,6 +176,8 @@ export const categories: CategoryInfo[] = [
       { id: 'text-reverse', name: '文本倒序与颠倒', description: '支持字符倒序、行倒序、词倒序与 Unicode 颠倒倒立字', path: '/text/reverse', icon: ArrowLeftRight, keywords: ['倒序', '翻转', '颠倒', '字符倒序', '行倒序', 'upside down'] },
       { id: 'mars-text', name: '火星文与趣味字体', description: '非主流火星文、字符菊花挂件、删除线与防折叠文字', path: '/text/mars', icon: Sparkles, keywords: ['火星文', '菊花文', '防折叠', '非主流', '删字线'] },
       { id: 'random-generator', name: '随机数据批量生成', description: '批量生成中文姓名、手机号、邮箱、IP、MAC 地址等测试样本', path: '/text/random-generator', icon: Shuffle, keywords: ['随机生成', '随机姓名', '随机手机号', '随机邮箱', '测试数据', 'mock'] },
+      { id: 'lorem-ipsum', name: 'Lorem Ipsum 生成器', description: '一键生成英文占位文本（段落 / 句子 / 单词），用于排版与原型填充', path: '/text/lorem-ipsum', icon: FileText, keywords: ['lorem', 'lorem ipsum', '占位文本', '假文', '排版', '填充文本'] },
+      { id: 'slug', name: 'Slug 生成器', description: '标题转 URL 友好短链接：中文自动转拼音，去除特殊字符', path: '/text/slug', icon: Link, keywords: ['slug', '短链接', 'url别名', '拼音转slug', '标题转链接', 'seo'] },
     ],
   },
   {

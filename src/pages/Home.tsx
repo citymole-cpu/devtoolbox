@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { categories } from '../lib/toolRegistry'
 import { useI18n } from '../components/I18nProvider'
+import { AdSlot } from '../components/AdSlot'
 import { Wrench, Search, Zap, Shield, Moon } from 'lucide-react'
 
 export default function Home() {
@@ -43,6 +44,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* 广告位：首页 Hero 下方横幅（A-ADS） */}
+      <AdSlot slot="home-top" />
+
       {/* Tool Categories Grid */}
       <div className="grid gap-8">
         {categories.map(cat => {
@@ -84,6 +88,16 @@ export default function Home() {
           )
         })}
       </div>
+
+      {/* 广告位：首页底部（A-ADS） */}
+      <AdSlot slot="home-bottom" />
+
+      {/* 首页介绍：可索引的文字内容（SEO） */}
+      <section className="max-w-3xl mx-auto text-center px-2">
+        <h2 className="text-xl font-semibold mb-3">{t.homeIntroTitle}</h2>
+        <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">{t.homeIntroP1}</p>
+        <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400 mt-2">{t.homeIntroP2}</p>
+      </section>
 
       {/* Footer */}
       <footer className="text-center py-8 border-t text-sm text-gray-400 dark:text-gray-600">

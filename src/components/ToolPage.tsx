@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { getToolByPath, getCategoryByToolPath } from '../lib/toolRegistry'
 import { useI18n } from './I18nProvider'
+import { AdSlot } from './AdSlot'
 import { ChevronRight, Home } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -46,6 +47,9 @@ export function ToolPage({ title, description, children }: ToolPageProps) {
 
       {/* Content */}
       <div className="flex-1">{children}</div>
+
+      {/* 广告位：工具页底部，工具内容下方（A-ADS） */}
+      <AdSlot slot="tool-bottom" />
     </div>
   )
 }
