@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import { ThemeProvider } from './components/ThemeProvider'
 import { I18nProvider } from './components/I18nProvider'
+import { ToolPreferencesProvider } from './components/ToolPreferencesProvider'
 import './index.css'
 
 // 兼容旧版 HashRouter 链接（如 /tools/#/json/formatter）：
@@ -18,7 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter basename="/tools/">
       <ThemeProvider>
         <I18nProvider>
-          <App />
+          <ToolPreferencesProvider>
+            <App />
+          </ToolPreferencesProvider>
         </I18nProvider>
       </ThemeProvider>
     </BrowserRouter>

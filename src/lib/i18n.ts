@@ -41,6 +41,17 @@ export interface TranslationDictionary {
   homeIntroP1: string;
   homeIntroP2: string;
 
+  // Favorites & Recent
+  favorites: string;
+  favoritesEmpty: string;
+  recentTools: string;
+  recentEmpty: string;
+  clearRecent: string;
+  addFavorite: string;
+  removeFavorite: string;
+  favorite: string;
+  favorited: string;
+
   // Categories
   catJson: string;
   catConvert: string;
@@ -95,6 +106,16 @@ export const translations: Record<Language, TranslationDictionary> = {
     homeIntroP1: 'DevToolBox 是一个免费在线开发者工具箱，提供 140 个常用工具，涵盖 JSON 处理、格式转换、编解码、加密哈希、代码格式化、文本处理、图片处理和开发速查。所有工具都在浏览器本地运行，数据不会上传到任何服务器，打开即用，无需注册登录。',
     homeIntroP2: '无论是格式化一段 JSON、生成二维码、计算文件哈希，还是查询 HTTP 状态码、转换时间戳，都可以在这里一键完成。支持深色模式、快捷键搜索（Ctrl+K）和中英日三语界面，手机和电脑都能用。',
 
+    favorites: '我的收藏',
+    favoritesEmpty: '还没有收藏任何工具，点击工具卡片或工具页上的星标即可收藏。',
+    recentTools: '最近使用',
+    recentEmpty: '还没有最近使用的工具，打开任意工具后会自动记录在这里。',
+    clearRecent: '清除最近使用',
+    addFavorite: '收藏工具',
+    removeFavorite: '取消收藏',
+    favorite: '收藏',
+    favorited: '已收藏',
+
     catJson: 'JSON 工具',
     catConvert: '格式转换',
     catNet: '网络与接口',
@@ -146,6 +167,16 @@ export const translations: Record<Language, TranslationDictionary> = {
     homeIntroP1: 'DevToolBox is a free online developer toolbox with 140 handy tools for JSON, format conversion, encoding, encryption & hashing, code formatting, text processing, image tools and quick references. Every tool runs locally in your browser — no uploads, no sign-up, just open and use.',
     homeIntroP2: 'Format a JSON snippet, generate a QR code, hash a file, look up HTTP status codes or convert a timestamp — it is all one click away. Dark mode, Ctrl+K quick search and Chinese, English and Japanese interfaces work on desktop and mobile.',
 
+    favorites: 'Favorites',
+    favoritesEmpty: 'No favorite tools yet. Click the star icon on any tool card or tool page to save it here.',
+    recentTools: 'Recently Used',
+    recentEmpty: 'No recently used tools yet. Tools you open will appear here automatically.',
+    clearRecent: 'Clear Recent',
+    addFavorite: 'Add to favorites',
+    removeFavorite: 'Remove from favorites',
+    favorite: 'Favorite',
+    favorited: 'Favorited',
+
     catJson: 'JSON Utilities',
     catConvert: 'Format Converters',
     catNet: 'Network & API',
@@ -196,6 +227,16 @@ export const translations: Record<Language, TranslationDictionary> = {
     homeIntroTitle: 'DevToolBox について',
     homeIntroP1: 'DevToolBox は 140 の便利なツールを備えた無料のオンラインデベロッパーツールボックスです。JSON 処理、フォーマット変換、エンコード、暗号化・ハッシュ、コード整形、テキスト処理、画像処理、リファレンスをカバーします。すべてのツールはブラウザ内でローカルに動作し、データがサーバーにアップロードされることはありません。登録不要で、開くだけで使えます。',
     homeIntroP2: 'JSON の整形、QR コードの生成、ファイルハッシュの計算、HTTP ステータスコードの確認、タイムスタンプの変換など、すべてワンクリックで完了します。ダークモード、Ctrl+K クイック検索、中国語・英語・日本語インターフェースに対応し、PC でもスマホでも使えます。',
+
+    favorites: 'お気に入り',
+    favoritesEmpty: 'お気に入りのツールはまだありません。ツールカードまたはツールページの星アイコンをクリックして追加できます。',
+    recentTools: '最近使ったツール',
+    recentEmpty: '最近使ったツールはまだありません。ツールを開くと自動的にここに記録されます。',
+    clearRecent: '履歴をクリア',
+    addFavorite: 'お気に入りに追加',
+    removeFavorite: 'お気に入りから削除',
+    favorite: 'お気に入り',
+    favorited: 'お気に入り済み',
 
     catJson: 'JSON ツール',
     catConvert: 'フォーマット変換',

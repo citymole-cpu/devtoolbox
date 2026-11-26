@@ -297,6 +297,10 @@ export function searchTools(query: string): ToolInfo[] {
   )
 }
 
+export function getToolById(id: string): ToolInfo | undefined {
+  return allTools.find(t => t.id === id)
+}
+
 export function getToolByPath(path: string): ToolInfo | undefined {
   return allTools.find(t => t.path === path)
 }
