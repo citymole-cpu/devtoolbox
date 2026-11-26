@@ -436,7 +436,7 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   },
   "regex-tester": {
     "name": "Regex Tester",
-    "description": "Realtime regular expression playground & cheat sheet"
+    "description": "Realtime regex testing, match highlighting, capture groups & replace"
   },
   "text-stats": {
     "name": "Text Word Counter",
@@ -717,10 +717,6 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "text-arrange": {
     "name": "Text Typesetting & Cleaner",
     "description": "Auto format spacing between Chinese and English, clean line breaks"
-  },
-  "regex": {
-    "name": "Regex Tester & Cheatsheet",
-    "description": "Regular expression testing, extraction, and syntax cheatsheet"
   },
   "markdown": {
     "name": "Markdown Live Editor",
@@ -1275,10 +1271,6 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "text-arrange": {
     "name": "テキスト組版・クレンジング",
     "description": "和欧文間の半角スペース自動挿入、空行整理、段落インデント整形"
-  },
-  "regex": {
-    "name": "正規表現テスター＆リファレンス",
-    "description": "正規表現のリアルタイム検証、グループ抽出、構文早見表"
   },
   "markdown": {
     "name": "Markdown リアルタイムエディタ",

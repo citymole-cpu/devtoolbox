@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/Layout'
 
 // Lazy load all tool pages
@@ -252,7 +252,8 @@ export default function App() {
         <Route path="/text/arrange" element={<TextArrange />} />
         <Route path="/text/ascii-art" element={<AsciiArt />} />
         <Route path="/text/pinyin" element={<Pinyin />} />
-        <Route path="/text/regex" element={<RegexTester />} />
+        <Route path="/text/regex-tester" element={<RegexTester />} />
+        <Route path="/text/regex" element={<Navigate to="/text/regex-tester" replace />} />
         <Route path="/text/stats" element={<TextStats />} />
         <Route path="/text/batch-process" element={<BatchProcess />} />
         <Route path="/text/sort" element={<TextSort />} />

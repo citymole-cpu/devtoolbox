@@ -182,7 +182,7 @@ export const categories: CategoryInfo[] = [
       { id: 'text-arrange', name: '文本排版与多维清洗', description: '古典文字竖排、多行合并单行、随机打乱、分列提取与过滤', path: '/text/arrange', icon: ListFilter, keywords: ['文本竖排', '古风排版', '多行合一', '随机打乱', '分列提取', '清除数字'] },
       { id: 'ascii-art', name: 'ASCII 艺术字与字符画', description: '输入文字生成终端 CLI Banner、线条艺术字与空心大字', path: '/text/ascii-art', icon: TypeIcon, keywords: ['ascii艺术字', '字符画', 'banner', '终端字符', '命令行字'] },
       { id: 'pinyin', name: '汉字转拼音', description: '中文汉字快速转换为全拼、带声调或首字母', path: '/text/pinyin', icon: Languages, keywords: ['拼音', '汉字转拼音', 'pinyin', '声调', '注音'] },
-      { id: 'regex', name: '正则测试', description: '正则表达式在线测试与匹配', path: '/text/regex', icon: Regex, keywords: ['正则', 'regex', '匹配', '测试', 'regexp'] },
+      { id: 'regex-tester', name: '正则表达式测试器', description: '正则表达式实时测试、高亮匹配、查看分组与替换', path: '/text/regex-tester', icon: Regex, keywords: ['正则', 'regex', '匹配', '测试', 'regexp', '替换', 'regex tester'] },
       { id: 'text-stats', name: '文本统计', description: '统计字数、字符数、行数、词频', path: '/text/stats', icon: BarChart3, keywords: ['文本', '统计', '字数', '行数', '字符'] },
       { id: 'batch-process', name: '文本批量处理', description: '批量添加前后缀、去除首尾空格、行关键字过滤', path: '/text/batch-process', icon: ListFilter, keywords: ['文本', '前缀', '后缀', '过滤', '批量'] },
       { id: 'text-sort', name: '去重排序', description: '文本去重、排序、过滤空行', path: '/text/sort', icon: ArrowUpDown, keywords: ['文本', '去重', '排序', '过滤', 'sort', 'unique'] },
