@@ -236,6 +236,7 @@ export const categories: CategoryInfo[] = [
     color: 'text-indigo-500',
     tools: [
       { id: 'git-commands', name: 'Git 常用命令速查', description: '提交流程、分支合并、版本回滚等 Git 高频操作大全', path: '/ref/git-commands', icon: GitBranch, keywords: ['git', '命令', '版本控制', '分支', 'commit', 'rebase', 'merge'] },
+      { id: 'gitignore', name: '.gitignore 生成器', description: '选择 Node/Python/Java/Go/Rust/系统/IDE 模板多选叠加去重，生成并下载 .gitignore', path: '/ref/gitignore', icon: FileCode2, keywords: ['gitignore', '.gitignore', 'git', '忽略文件', '忽略规则', 'node_modules', 'template', 'generator'] },
       { id: 'http-status', name: 'HTTP 状态码速查', description: '1xx 到 5xx 完整 HTTP 响应状态码及含义说明', path: '/ref/http-status', icon: Network, keywords: ['http', '状态码', 'status', '200', '404', '500', '302', '网络'] },
       { id: 'mime-type', name: 'MIME 类型速查', description: '常见文件后缀与 Content-Type 对照检索', path: '/ref/mime-type', icon: Table, keywords: ['mime', 'content-type', '文件类型', '后缀', 'header'] },
       { id: 'ports', name: '常用端口对照表', description: '常见网络协议与知名系统/服务端口速查', path: '/ref/ports', icon: HardDrive, keywords: ['端口', 'port', '80', '443', '3306', '6379', '服务', '网络'] },

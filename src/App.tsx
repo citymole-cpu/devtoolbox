@@ -128,6 +128,7 @@ const ImageCompress = lazy(() => import('./pages/media/ImageCompress'))
 
 // Reference Tools
 const GitCommands = lazy(() => import('./pages/ref/GitCommands'))
+const GitignoreGenerator = lazy(() => import('./pages/ref/GitignoreGenerator'))
 const HttpStatus = lazy(() => import('./pages/ref/HttpStatus'))
 const MimeType = lazy(() => import('./pages/ref/MimeType'))
 const Ports = lazy(() => import('./pages/ref/Ports'))
@@ -296,6 +297,7 @@ export default function App() {
 
         {/* Reference */}
         <Route path="/ref/git-commands" element={<GitCommands />} />
+        <Route path="/ref/gitignore" element={<GitignoreGenerator />} />
         <Route path="/ref/http-status" element={<HttpStatus />} />
         <Route path="/ref/mime-type" element={<MimeType />} />
         <Route path="/ref/ports" element={<Ports />} />
