@@ -10,24 +10,24 @@ const SITE_URL = 'https://zapbits.xyz/tools'
 const SITE_NAME = 'DevToolBox'
 
 const HOME_TITLE: Record<string, string> = {
-  'zh-CN': 'DevToolBox - 免费在线开发者工具箱 | 140个工具',
-  'en-US': 'DevToolBox - Free Online Developer Toolbox | 140 Tools',
-  'ja-JP': 'DevToolBox - 無料オンライン開発者ツールボックス | 140ツール',
+  'zh-CN': 'DevToolBox - 免费在线开发者工具箱 | 141个工具',
+  'en-US': 'DevToolBox - Free Online Developer Toolbox | 141 Tools',
+  'ja-JP': 'DevToolBox - 無料オンライン開発者ツールボックス | 141ツール',
 }
 
 const HOME_DESC: Record<string, string> = {
   'zh-CN':
-    'DevToolBox - 免费在线开发者工具箱：JSON格式化、编解码、加密哈希、格式转换、文本处理、图片处理等140个实用工具，全部在浏览器本地运行，无需上传，安全免费。',
+    'DevToolBox - 免费在线开发者工具箱：JSON格式化、编解码、加密哈希、格式转换、文本处理、图片处理等141个实用工具，全部在浏览器本地运行，无需上传，安全免费。',
   'en-US':
-    'DevToolBox - free online developer toolbox: 140 handy tools for JSON formatting, encoding, encryption & hashing, format conversion, text and image processing. Everything runs locally in your browser, no uploads.',
+    'DevToolBox - free online developer toolbox: 141 handy tools for JSON formatting, encoding, encryption & hashing, format conversion, text and image processing. Everything runs locally in your browser, no uploads.',
   'ja-JP':
-    'DevToolBox - 無料オンライン開発者ツールボックス：JSON 整形、エンコード、暗号化・ハッシュ、フォーマット変換、テキスト・画像処理など 140 の便利なツール。すべてブラウザでローカルに動作します。',
+    'DevToolBox - 無料オンライン開発者ツールボックス：JSON 整形、エンコード、暗号化・ハッシュ、フォーマット変換、テキスト・画像処理など 141 の便利なツール。すべてブラウザでローカルに動作します。',
 }
 
 const HOME_KEYWORDS: Record<string, string> = {
-  'zh-CN': '在线开发者工具,DevToolBox,JSON格式化,Base64,时间戳,正则表达式,chmod计算器,.gitignore生成器',
-  'en-US': 'developer tools,DevToolBox,JSON formatter,Base64,timestamp,regex tester,chmod calculator,gitignore generator',
-  'ja-JP': '開発者ツール,DevToolBox,JSON整形,Base64,タイムスタンプ,正規表現,chmod計算機,.gitignore生成',
+  'zh-CN': '在线开发者工具,DevToolBox,JSON格式化,Base64,时间戳,正则表达式,chmod计算器,.gitignore生成器,HTML转JSX',
+  'en-US': 'developer tools,DevToolBox,JSON formatter,Base64,timestamp,regex tester,chmod calculator,gitignore generator,HTML to JSX',
+  'ja-JP': '開発者ツール,DevToolBox,JSON整形,Base64,タイムスタンプ,正規表現,chmod計算機,.gitignore生成,HTML JSX変換',
 }
 
 const TOOL_SUFFIX: Record<string, string> = {

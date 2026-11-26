@@ -83,6 +83,7 @@ export const categories: CategoryInfo[] = [
       { id: 'curl-to-code', name: 'cURL 转代码', description: 'cURL 请求转换为 Fetch / Python / Go 代码', path: '/convert/curl-to-code', icon: Terminal, keywords: ['curl', 'python', 'fetch', 'requests', '代码生成', '爬虫'] },
       { id: 'json-to-sql', name: 'JSON 转 SQL', description: '将 JSON 对象数组一键生成批量 SQL INSERT 语句', path: '/convert/json-to-sql', icon: Database, keywords: ['sql', 'insert', 'json转sql', '数据库', '批量插入'] },
       { id: 'html-markdown', name: 'HTML ↔ Markdown', description: 'HTML 网页代码与 Markdown 双向互转', path: '/convert/html-markdown', icon: CodeXml, keywords: ['html', 'markdown', 'md', '转换'] },
+      { id: 'html-jsx', name: 'HTML 转 JSX', description: 'HTML 代码实时转换为 React JSX，自动处理 className、htmlFor、style 对象、注释与自闭合标签', path: '/convert/html-jsx', icon: Code2, keywords: ['html', 'jsx', 'react', 'html转jsx', 'html to jsx', 'classname', 'htmlfor', '转换', 'convert'] },
       { id: 'json-yaml', name: 'JSON ↔ YAML', description: 'JSON 与 YAML 格式互相转换', path: '/convert/json-yaml', icon: ArrowLeftRight, keywords: ['json', 'yaml', '转换', 'convert'] },
       { id: 'json-xml', name: 'JSON ↔ XML', description: 'JSON 与 XML 格式互相转换', path: '/convert/json-xml', icon: ArrowLeftRight, keywords: ['json', 'xml', '转换', 'convert'] },
       { id: 'json-csv', name: 'JSON ↔ CSV', description: 'JSON 与 CSV 格式互相转换', path: '/convert/json-csv', icon: ArrowLeftRight, keywords: ['json', 'csv', '转换', 'convert', '表格'] },
