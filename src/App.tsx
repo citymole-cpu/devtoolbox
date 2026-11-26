@@ -133,6 +133,7 @@ const MimeType = lazy(() => import('./pages/ref/MimeType'))
 const Ports = lazy(() => import('./pages/ref/Ports'))
 const AsciiTable = lazy(() => import('./pages/ref/AsciiTable'))
 const LinuxCommands = lazy(() => import('./pages/ref/LinuxCommands'))
+const ChmodCalculator = lazy(() => import('./pages/ref/ChmodCalculator'))
 const MirrorRegistry = lazy(() => import('./pages/ref/MirrorRegistry'))
 const PublicDns = lazy(() => import('./pages/ref/PublicDns'))
 const EmojiSymbols = lazy(() => import('./pages/ref/EmojiSymbols'))
@@ -300,6 +301,7 @@ export default function App() {
         <Route path="/ref/ports" element={<Ports />} />
         <Route path="/ref/ascii" element={<AsciiTable />} />
         <Route path="/ref/linux-commands" element={<LinuxCommands />} />
+        <Route path="/ref/chmod" element={<ChmodCalculator />} />
         <Route path="/ref/mirrors" element={<MirrorRegistry />} />
         <Route path="/ref/dns" element={<PublicDns />} />
         <Route path="/ref/emojis" element={<EmojiSymbols />} />

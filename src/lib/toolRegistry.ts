@@ -241,6 +241,7 @@ export const categories: CategoryInfo[] = [
       { id: 'ports', name: '常用端口对照表', description: '常见网络协议与知名系统/服务端口速查', path: '/ref/ports', icon: HardDrive, keywords: ['端口', 'port', '80', '443', '3306', '6379', '服务', '网络'] },
       { id: 'ascii', name: 'ASCII 码速查表', description: '标准 0-127 ASCII 对照表与字符进制转换', path: '/ref/ascii', icon: Binary, keywords: ['ascii', '字符码', '对照表', '编码', '十进制', '十六进制'] },
       { id: 'linux-commands', name: 'Linux 常用命令', description: '分类检索常见 Linux 运维与开发高频命令速查', path: '/ref/linux-commands', icon: Terminal, keywords: ['linux', '命令', 'shell', 'bash', '运维', 'centos', 'ubuntu'] },
+      { id: 'chmod', name: '文件权限计算器 (chmod)', description: 'Linux 文件权限八进制（755）与符号表示（rwxr-xr-x）双向换算与 chmod 命令生成', path: '/ref/chmod', icon: Lock, keywords: ['chmod', '文件权限', '权限计算器', 'permissions', 'パーミッション', 'rwxr-xr-x', '755', '644', 'linux', 'octal'] },
       { id: 'mirror-registry', name: '开源镜像换源速查', description: 'npm、pip、composer、maven、docker 等国内极速镜像源配置与一键命令', path: '/ref/mirrors', icon: DownloadCloud, keywords: ['镜像源', 'npm淘宝源', 'pip清华源', 'docker镜像', 'maven阿里源', '换源'] },
       { id: 'public-dns', name: '公共 DNS 与 IPv6 大全', description: '阿里、腾讯、114、谷歌、Cloudflare 等纯净 IPv4/IPv6 DNS 地址与测速参考', path: '/ref/dns', icon: Server, keywords: ['dns', '公共dns', '阿里dns', '腾讯dns', 'ipv6', '114dns', 'cloudflare'] },
       { id: 'emoji-symbols', name: 'Emoji 与特殊符号大全', description: '收录数千款精选 Emoji 表情、数学、箭头、货币、希腊字母与序号，一键复制', path: '/ref/emojis', icon: Smile, keywords: ['emoji', '表情符号', '特殊字符', '符号大全', '特殊符号', '标点'] },
