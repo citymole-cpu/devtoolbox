@@ -49,6 +49,7 @@ const IpLookup = lazy(() => import('./pages/net/IpLookup'))
 
 // Encode Tools
 const Base64 = lazy(() => import('./pages/encode/Base64'))
+const Base32Base58 = lazy(() => import('./pages/encode/Base32Base58'))
 const UrlEncode = lazy(() => import('./pages/encode/UrlEncode'))
 const Unicode = lazy(() => import('./pages/encode/Unicode'))
 const HtmlEntities = lazy(() => import('./pages/encode/HtmlEntities'))
@@ -222,6 +223,7 @@ export default function App() {
 
         {/* Encode */}
         <Route path="/encode/base64" element={<Base64 />} />
+        <Route path="/encode/base32-base58" element={<Base32Base58 />} />
         <Route path="/encode/url" element={<UrlEncode />} />
         <Route path="/encode/unicode" element={<Unicode />} />
         <Route path="/encode/html-entities" element={<HtmlEntities />} />

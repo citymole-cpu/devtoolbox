@@ -122,6 +122,7 @@ export const categories: CategoryInfo[] = [
     color: 'text-green-500',
     tools: [
       { id: 'base64', name: 'Base64 编解码', description: 'Base64 编码与解码，支持文本和文件', path: '/encode/base64', icon: Binary, keywords: ['base64', '编码', '解码', 'encode', 'decode'] },
+      { id: 'base32-base58', name: 'Base32 / Base58 编解码', description: 'Base32 (RFC 4648) 与 Base58 (Bitcoin) 实时双向编解码，支持 UTF-8 文本与十六进制模式', path: '/encode/base32-base58', icon: Binary, keywords: ['base32', 'base58', 'bitcoin', 'rfc4648', '编码', '解码', '编解码', 'encode', 'decode', 'hex', '十六进制', '区块链', '加密货币'] },
       { id: 'url-encode', name: 'URL 编解码', description: 'URL 编码 (UrlEncode) 与解码 (UrlDecode)', path: '/encode/url', icon: Link, keywords: ['url', '编码', '解码', 'encode', 'decode', 'urlencode'] },
       { id: 'unicode', name: 'Unicode 编解码', description: 'Unicode 与中文字符互相转换', path: '/encode/unicode', icon: Languages, keywords: ['unicode', '编码', '解码', '中文', 'utf'] },
       { id: 'html-entities', name: 'HTML 实体编解码', description: 'HTML 实体字符编码与解码', path: '/encode/html-entities', icon: Code2, keywords: ['html', '实体', 'entity', '编码', '解码', '&amp;'] },
