@@ -52,6 +52,12 @@ export interface TranslationDictionary {
   favorite: string;
   favorited: string;
 
+  // Share Link
+  shareLink: string;
+  shareLinkCopied: string;
+  shareLinkTooLong: string;
+  shareLinkFailed: string;
+
   // Categories
   catJson: string;
   catConvert: string;
@@ -116,6 +122,11 @@ export const translations: Record<Language, TranslationDictionary> = {
     favorite: '收藏',
     favorited: '已收藏',
 
+    shareLink: '分享链接',
+    shareLinkCopied: '已复制链接',
+    shareLinkTooLong: '内容过长，超出 8000 字符限制，无法生成分享链接',
+    shareLinkFailed: '复制分享链接失败',
+
     catJson: 'JSON 工具',
     catConvert: '格式转换',
     catNet: '网络与接口',
@@ -177,6 +188,11 @@ export const translations: Record<Language, TranslationDictionary> = {
     favorite: 'Favorite',
     favorited: 'Favorited',
 
+    shareLink: 'Share Link',
+    shareLinkCopied: 'Link Copied',
+    shareLinkTooLong: 'Content is too long (exceeds 8,000-character URL limit)',
+    shareLinkFailed: 'Failed to copy share link',
+
     catJson: 'JSON Utilities',
     catConvert: 'Format Converters',
     catNet: 'Network & API',
@@ -237,6 +253,11 @@ export const translations: Record<Language, TranslationDictionary> = {
     removeFavorite: 'お気に入りから削除',
     favorite: 'お気に入り',
     favorited: 'お気に入り済み',
+
+    shareLink: '共有リンク',
+    shareLinkCopied: 'リンクをコピーしました',
+    shareLinkTooLong: '内容が長すぎます（URL上限8000文字を超過）',
+    shareLinkFailed: '共有リンクのコピーに失敗しました',
 
     catJson: 'JSON ツール',
     catConvert: 'フォーマット変換',

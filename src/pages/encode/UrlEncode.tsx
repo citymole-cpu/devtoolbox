@@ -1,6 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import { ToolPage } from '../../components/ToolPage';
 import { DualEditor } from '../../components/DualEditor';
+import { ShareLinkButton } from '../../components/ShareLinkButton';
+import { useShareableState } from '../../lib/shareableState';
 
 type Direction = 'encode' | 'decode';
 type EncodeMode = 'component' | 'full';
@@ -13,6 +15,23 @@ export default function UrlEncode() {
   const [error, setError] = useState('');
   const [direction, setDirection] = useState<Direction>('encode');
   const [encodeMode, setEncodeMode] = useState<EncodeMode>('component');
+
+  const { createShareUrl } = useShareableState<{
+    input: string;
+    direction: Direction;
+    encodeMode: EncodeMode;
+  }>(
+    () => ({ input, direction, encodeMode }),
+    (restored) => {
+      if (typeof restored.input === 'string') setInput(restored.input);
+      if (restored.direction === 'encode' || restored.direction === 'decode') {
+        setDirection(restored.direction);
+      }
+      if (restored.encodeMode === 'component' || restored.encodeMode === 'full') {
+        setEncodeMode(restored.encodeMode);
+      }
+    }
+  );
 
   const convert = useCallback(
     (text: string, dir: Direction, mode: EncodeMode) => {
@@ -107,6 +126,8 @@ export default function UrlEncode() {
         >
           加载示例
         </button>
+
+        <ShareLinkButton getShareUrl={createShareUrl} />
       </div>
       <DualEditor
         input={input}

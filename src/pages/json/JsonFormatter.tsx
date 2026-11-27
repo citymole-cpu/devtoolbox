@@ -2,6 +2,8 @@ import { useState, useCallback, useEffect } from 'react';
 import { ToolPage } from '../../components/ToolPage';
 import { CodeEditor } from '../../components/CodeEditor';
 import { CopyButton } from '../../components/CopyButton';
+import { ShareLinkButton } from '../../components/ShareLinkButton';
+import { useShareableState } from '../../lib/shareableState';
 
 type IndentType = '2' | '4' | 'tab';
 
@@ -26,6 +28,21 @@ export default function JsonFormatter() {
   const [error, setError] = useState('');
   const [indent, setIndent] = useState<IndentType>('2');
   const [sortKeys, setSortKeys] = useState(false);
+
+  const { createShareUrl } = useShareableState<{
+    input: string;
+    indent: IndentType;
+    sortKeys: boolean;
+  }>(
+    () => ({ input, indent, sortKeys }),
+    (restored) => {
+      if (typeof restored.input === 'string') setInput(restored.input);
+      if (restored.indent === '2' || restored.indent === '4' || restored.indent === 'tab') {
+        setIndent(restored.indent);
+      }
+      if (typeof restored.sortKeys === 'boolean') setSortKeys(restored.sortKeys);
+    }
+  );
 
   const getIndent = useCallback((t: IndentType): string | number => {
     if (t === 'tab') return '\t';
@@ -125,6 +142,7 @@ export default function JsonFormatter() {
           >
             示例
           </button>
+          <ShareLinkButton getShareUrl={createShareUrl} />
         </div>
       </div>
 
