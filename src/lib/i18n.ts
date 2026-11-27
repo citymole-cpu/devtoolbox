@@ -693,7 +693,7 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   },
   "timestamp": {
     "name": "Unix Timestamp Converter",
-    "description": "Convert Unix epoch timestamps to human-readable dates"
+    "description": "Bidirectional Unix timestamp (s/ms) and Local/UTC date-time converter with ISO 8601 and relative time"
   },
   "color": {
     "name": "Color Converter & Picker",
@@ -1270,8 +1270,8 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
     "description": "データ容量単位 (B/KB/MB/GB) と CSS 単位 (px/rem/em/vw) の変換"
   },
   "timestamp": {
-    "name": "Unix タイムスタンプ変換",
-    "description": "Unix 時間と日時文字列の双方向変換"
+    "name": "Unix タイムスタンプ変換器",
+    "description": "Unix タイムスタンプ（秒/ミリ秒）とローカル/UTC 日時の双方向変換・ISO 8601・相対時間表示"
   },
   "color": {
     "name": "カラーコード変換＆ピッカー",

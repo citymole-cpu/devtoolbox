@@ -30,6 +30,7 @@ const JsonCsv = lazy(() => import('./pages/convert/JsonCsv'))
 const JsonToml = lazy(() => import('./pages/convert/JsonToml'))
 const PropertiesJson = lazy(() => import('./pages/convert/PropertiesJson'))
 const Radix = lazy(() => import('./pages/convert/Radix'))
+const TimestampConverter = lazy(() => import('./pages/convert/TimestampConverter'))
 const RmbCapital = lazy(() => import('./pages/convert/RmbCapital'))
 const CurrencyCapital = lazy(() => import('./pages/convert/CurrencyCapital'))
 const QueryString = lazy(() => import('./pages/convert/QueryString'))
@@ -152,7 +153,6 @@ const WebFonts = lazy(() => import('./pages/ref/WebFonts'))
 // Misc Tools
 const QrDecode = lazy(() => import('./pages/misc/QrDecode'))
 const UnitConverter = lazy(() => import('./pages/misc/UnitConverter'))
-const Timestamp = lazy(() => import('./pages/misc/Timestamp'))
 const ColorConverter = lazy(() => import('./pages/misc/ColorConverter'))
 const CronGenerator = lazy(() => import('./pages/misc/CronGenerator'))
 const PasswordGenerator = lazy(() => import('./pages/misc/PasswordGenerator'))
@@ -202,6 +202,7 @@ export default function App() {
         <Route path="/convert/json-toml" element={<JsonToml />} />
         <Route path="/convert/properties-json" element={<PropertiesJson />} />
         <Route path="/convert/radix" element={<Radix />} />
+        <Route path="/convert/timestamp" element={<TimestampConverter />} />
         <Route path="/convert/rmb-capital" element={<RmbCapital />} />
         <Route path="/convert/currency-capital" element={<CurrencyCapital />} />
         <Route path="/convert/query-string" element={<QueryString />} />
@@ -325,7 +326,7 @@ export default function App() {
         {/* Misc */}
         <Route path="/misc/qr-decode" element={<QrDecode />} />
         <Route path="/misc/unit-converter" element={<UnitConverter />} />
-        <Route path="/misc/timestamp" element={<Timestamp />} />
+        <Route path="/misc/timestamp" element={<Navigate to="/convert/timestamp" replace />} />
         <Route path="/misc/color" element={<ColorConverter />} />
         <Route path="/misc/cron" element={<CronGenerator />} />
         <Route path="/misc/password" element={<PasswordGenerator />} />
