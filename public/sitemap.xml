@@ -526,6 +526,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/net/sitemap-generator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/net/websocket</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
