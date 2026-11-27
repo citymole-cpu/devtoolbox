@@ -28,6 +28,7 @@ const ConvertJsonToTypescript = lazy(() => import('./pages/convert/JsonToTypescr
 const JsonYaml = lazy(() => import('./pages/convert/JsonYaml'))
 const JsonXml = lazy(() => import('./pages/convert/JsonXml'))
 const JsonCsv = lazy(() => import('./pages/convert/JsonCsv'))
+const JsonToExcel = lazy(() => import('./pages/convert/JsonToExcel'))
 const JsonToml = lazy(() => import('./pages/convert/JsonToml'))
 const PropertiesJson = lazy(() => import('./pages/convert/PropertiesJson'))
 const Radix = lazy(() => import('./pages/convert/Radix'))
@@ -204,6 +205,7 @@ export default function App() {
         <Route path="/convert/json-yaml" element={<JsonYaml />} />
         <Route path="/convert/json-xml" element={<JsonXml />} />
         <Route path="/convert/json-csv" element={<JsonCsv />} />
+        <Route path="/convert/json-to-excel" element={<JsonToExcel />} />
         <Route path="/convert/json-toml" element={<JsonToml />} />
         <Route path="/convert/properties-json" element={<PropertiesJson />} />
         <Route path="/convert/radix" element={<Radix />} />

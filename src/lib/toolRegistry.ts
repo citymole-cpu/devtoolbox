@@ -35,6 +35,7 @@ import {
   LayoutGrid,
   MapPin,
   Tags,
+  FileSpreadsheet,
 } from 'lucide-react'
 
 export interface ToolInfo {
@@ -89,6 +90,7 @@ export const categories: CategoryInfo[] = [
       { id: 'json-yaml', name: 'JSON ↔ YAML', description: 'JSON 与 YAML 格式互相转换', path: '/convert/json-yaml', icon: ArrowLeftRight, keywords: ['json', 'yaml', '转换', 'convert'] },
       { id: 'json-xml', name: 'JSON ↔ XML', description: 'JSON 与 XML 格式互相转换', path: '/convert/json-xml', icon: ArrowLeftRight, keywords: ['json', 'xml', '转换', 'convert'] },
       { id: 'json-csv', name: 'JSON ↔ CSV', description: 'JSON 与 CSV 格式互相转换', path: '/convert/json-csv', icon: ArrowLeftRight, keywords: ['json', 'csv', '转换', 'convert', '表格'] },
+      { id: 'json-to-excel', name: 'JSON 转 Excel', description: '将 JSON 数组或对象实时预览为表格并导出下载标准 .xlsx 文件', path: '/convert/json-to-excel', icon: FileSpreadsheet, keywords: ['json', 'excel', 'xlsx', '表格', '导出', 'json转excel', 'json to excel', 'spreadsheet', '转换', 'convert'] },
       { id: 'json-toml', name: 'JSON ↔ TOML', description: 'JSON 与 TOML 格式互相转换', path: '/convert/json-toml', icon: ArrowLeftRight, keywords: ['json', 'toml', '转换', 'convert'] },
       { id: 'json-properties', name: 'Properties ↔ JSON', description: 'Java Properties 与 JSON 互相转换', path: '/convert/properties-json', icon: ArrowLeftRight, keywords: ['properties', 'json', '转换', 'convert', 'java'] },
       { id: 'radix', name: '进制转换器', description: '2/8/10/16 进制及任意 2-36 进制即时转换', path: '/convert/radix', icon: Calculator, keywords: ['进制', '二进制', '八进制', '十进制', '十六进制', 'hex', 'bin', 'oct'] },
