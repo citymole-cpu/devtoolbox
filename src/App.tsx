@@ -64,6 +64,7 @@ const Rsa = lazy(() => import('./pages/crypto/Rsa'))
 const Crc32 = lazy(() => import('./pages/crypto/Crc32'))
 const Uuid = lazy(() => import('./pages/crypto/Uuid'))
 const FileHash = lazy(() => import('./pages/crypto/FileHash'))
+const SriHash = lazy(() => import('./pages/crypto/SriHash'))
 const PasswordStrength = lazy(() => import('./pages/crypto/PasswordStrength'))
 const Bcrypt = lazy(() => import('./pages/crypto/Bcrypt'))
 
@@ -235,6 +236,7 @@ export default function App() {
         <Route path="/crypto/crc32" element={<Crc32 />} />
         <Route path="/crypto/uuid" element={<Uuid />} />
         <Route path="/crypto/file-hash" element={<FileHash />} />
+        <Route path="/crypto/sri-hash" element={<SriHash />} />
         <Route path="/crypto/password-strength" element={<PasswordStrength />} />
         <Route path="/crypto/bcrypt" element={<Bcrypt />} />
 

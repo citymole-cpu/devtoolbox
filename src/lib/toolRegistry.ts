@@ -143,6 +143,7 @@ export const categories: CategoryInfo[] = [
       { id: 'crc32', name: 'CRC32 校验码', description: '计算数据与字符串的 CRC32 循环冗余校验值', path: '/crypto/crc32', icon: CheckCircle2, keywords: ['crc', 'crc32', '循环冗余校验', '校验码'] },
       { id: 'uuid', name: 'UUID 生成器', description: '生成 UUID / GUID 唯一标识符', path: '/crypto/uuid', icon: Fingerprint, keywords: ['uuid', 'guid', '生成', '唯一', '标识'] },
       { id: 'file-hash', name: '文件哈希与校验', description: '离线秒级计算大文件 MD5/SHA-1/SHA-256 校验码与防篡改验证', path: '/crypto/file-hash', icon: ShieldCheck, keywords: ['文件哈希', '文件md5', 'sha256', '防篡改', '文件校验'] },
+      { id: 'sri-hash', name: 'SRI Hash 生成器', description: '为 CDN 引入的 JS/CSS 生成 Subresource Integrity 哈希（SHA-256/384/512）与完整 HTML 标签', path: '/crypto/sri-hash', icon: ShieldCheck, keywords: ['sri', 'subresource integrity', 'integrity', 'sha256', 'sha384', 'sha512', 'cdn', '子资源完整性', '哈希', 'hash', 'script', 'link', '安全'] },
       { id: 'password-strength', name: '密码强度检测器', description: '本地检测密码强度：规则评分、熵值与破解耗时估算', path: '/crypto/password-strength', icon: ShieldCheck, keywords: ['密码强度', '密码检测', 'password strength', '熵值', '弱密码', '安全'] },
       { id: 'bcrypt', name: 'bcrypt 生成器', description: '纯前端生成与验证 bcrypt 密码哈希，支持 cost 调节', path: '/crypto/bcrypt', icon: Lock, keywords: ['bcrypt', '密码哈希', 'hash', '加密', '密码存储', '加盐'] },
     ],
