@@ -24,6 +24,7 @@ const CurlToCode = lazy(() => import('./pages/convert/CurlToCode'))
 const JsonToSql = lazy(() => import('./pages/convert/JsonToSql'))
 const HtmlMarkdown = lazy(() => import('./pages/convert/HtmlMarkdown'))
 const HtmlToJsx = lazy(() => import('./pages/convert/HtmlToJsx'))
+const ConvertJsonToTypescript = lazy(() => import('./pages/convert/JsonToTypescript'))
 const JsonYaml = lazy(() => import('./pages/convert/JsonYaml'))
 const JsonXml = lazy(() => import('./pages/convert/JsonXml'))
 const JsonCsv = lazy(() => import('./pages/convert/JsonCsv'))
@@ -196,6 +197,7 @@ export default function App() {
         <Route path="/convert/json-to-sql" element={<JsonToSql />} />
         <Route path="/convert/html-markdown" element={<HtmlMarkdown />} />
         <Route path="/convert/html-jsx" element={<HtmlToJsx />} />
+        <Route path="/convert/json-typescript" element={<ConvertJsonToTypescript />} />
         <Route path="/convert/json-yaml" element={<JsonYaml />} />
         <Route path="/convert/json-xml" element={<JsonXml />} />
         <Route path="/convert/json-csv" element={<JsonCsv />} />

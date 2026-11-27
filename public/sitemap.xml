@@ -41,6 +41,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/convert/json-typescript</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/convert/json-xml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
