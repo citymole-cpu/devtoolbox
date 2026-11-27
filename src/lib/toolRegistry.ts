@@ -283,6 +283,7 @@ export const categories: CategoryInfo[] = [
       { id: 'user-agent', name: 'User-Agent 分析器', description: '分析当前或输入的 UA 浏览器、操作系统与设备', path: '/misc/user-agent', icon: Monitor, keywords: ['ua', 'user-agent', '浏览器', '操作系统', '设备', '解析'] },
       { id: 'barcode-gen', name: '条形码在线生成器', description: '纯前端 Code 128 条形码在线生成、尺寸调整与导出', path: '/misc/barcode', icon: Barcode, keywords: ['条形码', '条码', 'barcode', 'code128', '条形码生成'] },
       { id: 'lunar-calendar', name: '阴阳历与十二时辰', description: '农历公历互转、生肖干支纪年与古代十二时辰推算', path: '/misc/lunar', icon: Calendar, keywords: ['农历', '阴历', '阳历', '生肖', '时辰', '干支', '节气'] },
+      { id: 'date-calculator', name: '日期计算器', description: '计算日期间隔、日期加减天数与工作日、星期查询与倒数日，支持常用快捷日期一键填入', path: '/misc/date-calculator', icon: Calendar, keywords: ['日期计算', '日期计算器', 'date calculator', '日期间隔', '天数计算', '工作日', '倒数日', '星期查询', 'date diff', 'workdays', 'countdown', '日付計算'] },
       { id: 'keycode-tester', name: '键盘 KeyCode 测试', description: '按下任意键捕捉 event.key/code/keyCode 与全键盘编码速查', path: '/misc/keycode', icon: Keyboard, keywords: ['keycode', '键盘测试', '按键码', 'key', 'code', 'which'] },
       { id: 'chart-generator', name: '轻量数据图表生成器', description: '在线可视化配置饼图、柱状图、折线图、环形图并导出 SVG/PNG', path: '/misc/charts', icon: BarChart3, keywords: ['图表', '饼图', '柱状图', '折线图', 'chart', '可视化'] },
       { id: 'perception-lab', name: '反应速度与色盲自测', description: '电竞级毫秒反应速度变色测速与经典假同色图卡色盲色弱自测', path: '/misc/perception', icon: Zap, keywords: ['反应速度', '色盲测试', '色弱', '眼力测试', '测速'] },

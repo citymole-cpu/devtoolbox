@@ -446,6 +446,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/misc/date-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/misc/disk-calc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

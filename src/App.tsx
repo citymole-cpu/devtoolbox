@@ -175,6 +175,7 @@ const GridPaperGenerator = lazy(() => import('./pages/misc/GridPaperGenerator'))
 const FileInspector = lazy(() => import('./pages/misc/FileInspector'))
 const MockDataGenerator = lazy(() => import('./pages/misc/MockDataGenerator'))
 const RenovationCalc = lazy(() => import('./pages/misc/RenovationCalc'))
+const DateCalculator = lazy(() => import('./pages/misc/DateCalculator'))
 
 export default function App() {
   return (
@@ -354,6 +355,7 @@ export default function App() {
         <Route path="/misc/file-inspector" element={<FileInspector />} />
         <Route path="/misc/mock-data" element={<MockDataGenerator />} />
         <Route path="/misc/renovation-calc" element={<RenovationCalc />} />
+        <Route path="/misc/date-calculator" element={<DateCalculator />} />
 
         {/* 未知路径兜底回首页 */}
         <Route path="*" element={<Home />} />
