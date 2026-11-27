@@ -78,6 +78,7 @@ const CssFormat = lazy(() => import('./pages/format/CssFormat'))
 const CssGenerator = lazy(() => import('./pages/format/CssGenerator'))
 const CssVisualGenerator = lazy(() => import('./pages/format/CssVisualGenerator'))
 const JsFormat = lazy(() => import('./pages/format/JsFormat'))
+const CodeMinifier = lazy(() => import('./pages/format/Minifier'))
 const CodeFormatUniversal = lazy(() => import('./pages/format/CodeFormatUniversal'))
 const HeaderCookieFormat = lazy(() => import('./pages/format/HeaderCookieFormat'))
 const SqlFormat = lazy(() => import('./pages/format/SqlFormat'))
@@ -253,6 +254,7 @@ export default function App() {
         <Route path="/format/css-generator" element={<CssGenerator />} />
         <Route path="/format/css-visual" element={<CssVisualGenerator />} />
         <Route path="/format/javascript" element={<JsFormat />} />
+        <Route path="/format/minify" element={<CodeMinifier />} />
         <Route path="/format/universal" element={<CodeFormatUniversal />} />
         <Route path="/format/header-cookie" element={<HeaderCookieFormat />} />
         <Route path="/format/sql" element={<SqlFormat />} />

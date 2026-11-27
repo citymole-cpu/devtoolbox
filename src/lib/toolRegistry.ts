@@ -163,6 +163,7 @@ export const categories: CategoryInfo[] = [
       { id: 'css-generator', name: 'CSS 阴影与渐变', description: '可视配置 Box Shadow 阴影与渐变背景生成', path: '/format/css-generator', icon: Sliders, keywords: ['css', '阴影', '渐变', 'box-shadow', 'gradient'] },
       { id: 'css-visual', name: 'CSS 现代视觉生成器', description: '不规则圆角、CSS几何三角形、毛玻璃卡片与立体按钮生成', path: '/format/css-visual', icon: Sparkles, keywords: ['圆角', '三角形', '毛玻璃', 'glassmorphism', '发光按钮', 'css特效'] },
       { id: 'js-format', name: 'JavaScript 格式化', description: 'JavaScript 代码格式化与压缩', path: '/format/javascript', icon: FileCode2, keywords: ['javascript', 'js', '格式化', '压缩', 'format', 'beautify'] },
+      { id: 'code-minifier', name: '代码压缩（CSS / JS / HTML）', description: '纯前端安全压缩 CSS、JavaScript、HTML 代码，去除注释与多余空白并实时统计字节数与压缩率', path: '/format/minify', icon: Minimize, keywords: ['代码压缩', 'css压缩', 'js压缩', 'html压缩', 'minify', 'minifier', 'code minifier', 'compress', 'uglify', 'css', 'javascript', 'html'] },
       { id: 'code-universal', name: '多语言通用代码美化', description: 'Python/Java/C/C++/C#/PHP/Go 语法缩进与紧凑压缩', path: '/format/universal', icon: Code2, keywords: ['python格式化', 'java格式化', 'c语言格式化', '代码美化', '缩进'] },
       { id: 'header-cookie', name: 'Headers / Cookie 格式化', description: 'HTTP 请求头、Cookie 与 URL Get 参数解析与转 JSON', path: '/format/header-cookie', icon: ArrowLeftRight, keywords: ['headers', 'cookie', 'query参数', '请求头', '参数解析'] },
       { id: 'sql-format', name: 'SQL 格式化', description: 'SQL 语句格式化与美化', path: '/format/sql', icon: Database, keywords: ['sql', '格式化', 'format', 'beautify', '数据库'] },
