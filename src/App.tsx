@@ -39,6 +39,7 @@ const HttpClient = lazy(() => import('./pages/net/HttpClient'))
 const CidrCalc = lazy(() => import('./pages/net/CidrCalc'))
 const WebSocketTester = lazy(() => import('./pages/net/WebSocketTester'))
 const RobotsGenerator = lazy(() => import('./pages/net/RobotsGenerator'))
+const MetaTagsGenerator = lazy(() => import('./pages/net/MetaTagsGenerator'))
 const Htpasswd = lazy(() => import('./pages/net/Htpasswd'))
 const DnsLookup = lazy(() => import('./pages/net/DnsLookup'))
 const IpLookup = lazy(() => import('./pages/net/IpLookup'))
@@ -208,6 +209,7 @@ export default function App() {
         <Route path="/net/cidr" element={<CidrCalc />} />
         <Route path="/net/websocket" element={<WebSocketTester />} />
         <Route path="/net/robots" element={<RobotsGenerator />} />
+        <Route path="/net/meta-tags" element={<MetaTagsGenerator />} />
         <Route path="/net/htpasswd" element={<Htpasswd />} />
         <Route path="/net/dns" element={<DnsLookup />} />
         <Route path="/net/ip" element={<IpLookup />} />
