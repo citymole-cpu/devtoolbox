@@ -32,6 +32,7 @@ const JsonToml = lazy(() => import('./pages/convert/JsonToml'))
 const PropertiesJson = lazy(() => import('./pages/convert/PropertiesJson'))
 const Radix = lazy(() => import('./pages/convert/Radix'))
 const TimestampConverter = lazy(() => import('./pages/convert/TimestampConverter'))
+const TimezoneConverter = lazy(() => import('./pages/convert/TimezoneConverter'))
 const RmbCapital = lazy(() => import('./pages/convert/RmbCapital'))
 const CurrencyCapital = lazy(() => import('./pages/convert/CurrencyCapital'))
 const QueryString = lazy(() => import('./pages/convert/QueryString'))
@@ -206,6 +207,7 @@ export default function App() {
         <Route path="/convert/properties-json" element={<PropertiesJson />} />
         <Route path="/convert/radix" element={<Radix />} />
         <Route path="/convert/timestamp" element={<TimestampConverter />} />
+        <Route path="/convert/timezone" element={<TimezoneConverter />} />
         <Route path="/convert/rmb-capital" element={<RmbCapital />} />
         <Route path="/convert/currency-capital" element={<CurrencyCapital />} />
         <Route path="/convert/query-string" element={<QueryString />} />
