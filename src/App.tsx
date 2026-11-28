@@ -181,6 +181,7 @@ const RenovationCalc = lazy(() => import('./pages/misc/RenovationCalc'))
 const MortgageCalculator = lazy(() => import('./pages/misc/MortgageCalculator'))
 const CarLoanCalculator = lazy(() => import('./pages/misc/CarLoanCalculator'))
 const CompoundInterest = lazy(() => import('./pages/misc/CompoundInterest'))
+const DiscountCalculator = lazy(() => import('./pages/misc/DiscountCalculator'))
 const DateCalculator = lazy(() => import('./pages/misc/DateCalculator'))
 const TextToSpeech = lazy(() => import('./pages/misc/TextToSpeech'))
 
@@ -368,6 +369,7 @@ export default function App() {
         <Route path="/misc/mortgage-calculator" element={<MortgageCalculator />} />
         <Route path="/misc/car-loan-calculator" element={<CarLoanCalculator />} />
         <Route path="/misc/compound-interest" element={<CompoundInterest />} />
+        <Route path="/misc/discount-calculator" element={<DiscountCalculator />} />
         <Route path="/misc/date-calculator" element={<DateCalculator />} />
         <Route path="/misc/text-to-speech" element={<TextToSpeech />} />
 

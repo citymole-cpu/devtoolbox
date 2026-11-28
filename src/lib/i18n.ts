@@ -107,9 +107,9 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: '深色模式 · 护眼沉浸',
     featureSearch: 'Ctrl+K 全局快速搜索',
     heroTitle: '开发者工具箱',
-    heroSubtitle: '全套 157 个常用开发工具，覆盖 JSON、编解码、加解密、格式转换、图片媒体、文本处理与速查对照，100% 离线运行。',
+    heroSubtitle: '全套 158 个常用开发工具，覆盖 JSON、编解码、加解密、格式转换、图片媒体、文本处理与速查对照，100% 离线运行。',
     homeIntroTitle: '关于 DevToolBox',
-    homeIntroP1: 'DevToolBox 是一个免费在线开发者工具箱，提供 157 个常用工具，涵盖 JSON 处理、格式转换、编解码、加密哈希、代码格式化、文本处理、图片处理和开发速查。所有工具都在浏览器本地运行，数据不会上传到任何服务器，打开即用，无需注册登录。',
+    homeIntroP1: 'DevToolBox 是一个免费在线开发者工具箱，提供 158 个常用工具，涵盖 JSON 处理、格式转换、编解码、加密哈希、代码格式化、文本处理、图片处理和开发速查。所有工具都在浏览器本地运行，数据不会上传到任何服务器，打开即用，无需注册登录。',
     homeIntroP2: '无论是格式化一段 JSON、生成二维码、计算文件哈希，还是查询 HTTP 状态码、转换时间戳，都可以在这里一键完成。支持深色模式、快捷键搜索（Ctrl+K）和中英日三语界面，手机和电脑都能用。',
 
     favorites: '我的收藏',
@@ -173,9 +173,9 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: 'Dark Mode Support',
     featureSearch: 'Ctrl+K Quick Search',
     heroTitle: 'Developer Toolbox',
-    heroSubtitle: '157 offline developer utilities: JSON, encoders, cryptography, converters, image media, and technical references.',
+    heroSubtitle: '158 offline developer utilities: JSON, encoders, cryptography, converters, image media, and technical references.',
     homeIntroTitle: 'About DevToolBox',
-    homeIntroP1: 'DevToolBox is a free online developer toolbox with 157 handy tools for JSON, format conversion, encoding, encryption & hashing, code formatting, text processing, image tools and quick references. Every tool runs locally in your browser — no uploads, no sign-up, just open and use.',
+    homeIntroP1: 'DevToolBox is a free online developer toolbox with 158 handy tools for JSON, format conversion, encoding, encryption & hashing, code formatting, text processing, image tools and quick references. Every tool runs locally in your browser — no uploads, no sign-up, just open and use.',
     homeIntroP2: 'Format a JSON snippet, generate a QR code, hash a file, look up HTTP status codes or convert a timestamp — it is all one click away. Dark mode, Ctrl+K quick search and Chinese, English and Japanese interfaces work on desktop and mobile.',
 
     favorites: 'Favorites',
@@ -239,9 +239,9 @@ export const translations: Record<Language, TranslationDictionary> = {
     featureDarkMode: '目に優しいダークモード',
     featureSearch: 'Ctrl+K 高速インクリメンタル検索',
     heroTitle: '開発者ツールボックス',
-    heroSubtitle: 'JSON整形、暗号化、エンコード/デコード、画像処理、コマンド早見表など157の必須ツールをオフラインで一括提供。',
+    heroSubtitle: 'JSON整形、暗号化、エンコード/デコード、画像処理、コマンド早見表など158の必須ツールをオフラインで一括提供。',
     homeIntroTitle: 'DevToolBox について',
-    homeIntroP1: 'DevToolBox は 157 の便利なツールを備えた無料のオンラインデベロッパーツールボックスです。JSON 処理、フォーマット変換、エンコード、暗号化・ハッシュ、コード整形、テキスト処理、画像処理、リファレンスをカバーします。すべてのツールはブラウザ内でローカルに動作し、データがサーバーにアップロードされることはありません。登録不要で、開くだけで使えます。',
+    homeIntroP1: 'DevToolBox は 158 の便利なツールを備えた無料のオンラインデベロッパーツールボックスです。JSON 処理、フォーマット変換、エンコード、暗号化・ハッシュ、コード整形、テキスト処理、画像処理、リファレンスをカバーします。すべてのツールはブラウザ内でローカルに動作し、データがサーバーにアップロードされることはありません。登録不要で、開くだけで使えます。',
     homeIntroP2: 'JSON の整形、QR コードの生成、ファイルハッシュの計算、HTTP ステータスコードの確認、タイムスタンプの変換など、すべてワンクリックで完了します。ダークモード、Ctrl+K クイック検索、中国語・英語・日本語インターフェースに対応し、PC でもスマホでも使えます。',
 
     favorites: 'お気に入り',
@@ -903,6 +903,10 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "text-to-speech": {
     "name": "Text to Speech",
     "description": "Read text aloud locally using browser built-in SpeechSynthesis with speed, pitch, volume, voice selection, and live highlight"
+  },
+  "discount-calculator": {
+    "name": "Discount Calculator",
+    "description": "Calculate sale price, savings amount and percentage from fold or % OFF, with multi-item totals and spend-X-save-Y threshold mode"
   }
 },
   'ja-JP': {
@@ -1533,6 +1537,10 @@ export const toolTranslations: Record<Language, Record<string, { name: string; d
   "text-to-speech": {
     "name": "テキスト読み上げ (TTS)",
     "description": "ブラウザ内蔵の SpeechSynthesis でテキストをローカル読み上げ。速度・音程・音量・話者選択とリアルタイムハイライトに対応"
+  },
+  "discount-calculator": {
+    "name": "割引計算機",
+    "description": "定価と割引率・折数から割引後価格・節約額・割引率をリアルタイム計算。複数商品まとめや購入額条件割引（満X減Y）にも対応"
   }
 }
 };
