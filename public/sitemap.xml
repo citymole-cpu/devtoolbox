@@ -491,6 +491,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/misc/mortgage-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/misc/password</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
