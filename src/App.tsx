@@ -182,6 +182,7 @@ const MortgageCalculator = lazy(() => import('./pages/misc/MortgageCalculator'))
 const CarLoanCalculator = lazy(() => import('./pages/misc/CarLoanCalculator'))
 const CompoundInterest = lazy(() => import('./pages/misc/CompoundInterest'))
 const DateCalculator = lazy(() => import('./pages/misc/DateCalculator'))
+const TextToSpeech = lazy(() => import('./pages/misc/TextToSpeech'))
 
 export default function App() {
   return (
@@ -368,6 +369,7 @@ export default function App() {
         <Route path="/misc/car-loan-calculator" element={<CarLoanCalculator />} />
         <Route path="/misc/compound-interest" element={<CompoundInterest />} />
         <Route path="/misc/date-calculator" element={<DateCalculator />} />
+        <Route path="/misc/text-to-speech" element={<TextToSpeech />} />
 
         {/* 未知路径兜底回首页 */}
         <Route path="*" element={<Home />} />

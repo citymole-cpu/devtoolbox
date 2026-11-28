@@ -39,6 +39,7 @@ import {
   Contrast,
   TrendingUp,
   Car,
+  Volume2,
 } from 'lucide-react'
 
 export interface ToolInfo {
@@ -301,6 +302,7 @@ export const categories: CategoryInfo[] = [
       { id: 'timer-lucky', name: '秒表倒计时与随机点名', description: '毫秒计次秒表、会议发言倒计时与随机点名抽签转盘', path: '/misc/timer-lucky', icon: Flag, keywords: ['秒表', '倒计时', '计时器', '随机点名', '抽签', '抽奖'] },
       { id: 'grid-paper', name: '格子纸与书法练字帖', description: '生成可打印的米字格、田字格、坐标方格纸、点阵手账纸 A4 版', path: '/misc/grid-paper', icon: Grid, keywords: ['格子纸', '米字格', '田字格', '练字帖', '方格纸', '点阵纸'] },
       { id: 'file-inspector', name: '文件格式与魔数识别', description: '读取 16 进制文件头 Magic Bytes 魔数，识别真实格式防止扩展名伪装', path: '/misc/file-inspector', icon: FileQuestion, keywords: ['文件格式识别', '魔数', 'magic bytes', '文件头', '伪装检测'] },
+      { id: 'text-to-speech', name: '文本转语音', description: '输入文本并使用浏览器内置 SpeechSynthesis 朗读，支持语速、音调、音量调节与发音人选择', path: '/misc/text-to-speech', icon: Volume2, keywords: ['文本转语音', '语音合成', '语音朗读', '朗读', 'tts', 'text to speech', 'speech synthesis', 'speech', 'voice', '配音', '音声読み上げ'] },
     ],
   },
 ]
