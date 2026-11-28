@@ -12,8 +12,8 @@ const registry = readFileSync(join(root, 'src/lib/toolRegistry.ts'), 'utf8')
 const paths = [...registry.matchAll(/path:\s*'([^']+)'/g)].map(m => m[1])
 const unique = [...new Set(paths)].sort()
 
-if (unique.length !== 153) {
-  console.warn(`警告：提取到 ${unique.length} 个工具路径（预期 153），请检查 toolRegistry.ts`)
+if (unique.length !== 154) {
+  console.warn(`警告：提取到 ${unique.length} 个工具路径（预期 154），请检查 toolRegistry.ts`)
 }
 
 const BASE = 'https://zapbits.xyz/tools'

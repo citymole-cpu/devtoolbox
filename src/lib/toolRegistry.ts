@@ -154,6 +154,7 @@ export const categories: CategoryInfo[] = [
       { id: 'sri-hash', name: 'SRI Hash 生成器', description: '为 CDN 引入的 JS/CSS 生成 Subresource Integrity 哈希（SHA-256/384/512）与完整 HTML 标签', path: '/crypto/sri-hash', icon: ShieldCheck, keywords: ['sri', 'subresource integrity', 'integrity', 'sha256', 'sha384', 'sha512', 'cdn', '子资源完整性', '哈希', 'hash', 'script', 'link', '安全'] },
       { id: 'password-strength', name: '密码强度检测器', description: '本地检测密码强度：规则评分、熵值与破解耗时估算', path: '/crypto/password-strength', icon: ShieldCheck, keywords: ['密码强度', '密码检测', 'password strength', '熵值', '弱密码', '安全'] },
       { id: 'bcrypt', name: 'bcrypt 生成器', description: '纯前端生成与验证 bcrypt 密码哈希，支持 cost 调节', path: '/crypto/bcrypt', icon: Lock, keywords: ['bcrypt', '密码哈希', 'hash', '加密', '密码存储', '加盐'] },
+      { id: 'totp-generator', name: 'TOTP 验证码生成器', description: '输入 Base32 密钥生成与 Google Authenticator 一致的 6/8 位动态验证码，带实时倒计时', path: '/crypto/totp', icon: KeyRound, keywords: ['totp', 'otp', '2fa', 'mfa', '双因素认证', '动态验证码', '验证码', 'google authenticator', 'rfc6238', 'base32', 'authenticator', '二段階認証'] },
     ],
   },
   {

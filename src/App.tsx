@@ -73,6 +73,7 @@ const FileHash = lazy(() => import('./pages/crypto/FileHash'))
 const SriHash = lazy(() => import('./pages/crypto/SriHash'))
 const PasswordStrength = lazy(() => import('./pages/crypto/PasswordStrength'))
 const Bcrypt = lazy(() => import('./pages/crypto/Bcrypt'))
+const TotpGenerator = lazy(() => import('./pages/crypto/TotpGenerator'))
 
 // Format Tools
 const HtmlFormat = lazy(() => import('./pages/format/HtmlFormat'))
@@ -254,6 +255,7 @@ export default function App() {
         <Route path="/crypto/sri-hash" element={<SriHash />} />
         <Route path="/crypto/password-strength" element={<PasswordStrength />} />
         <Route path="/crypto/bcrypt" element={<Bcrypt />} />
+        <Route path="/crypto/totp" element={<TotpGenerator />} />
 
         {/* Format */}
         <Route path="/format/html" element={<HtmlFormat />} />
