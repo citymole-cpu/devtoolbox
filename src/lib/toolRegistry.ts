@@ -36,6 +36,7 @@ import {
   MapPin,
   Tags,
   FileSpreadsheet,
+  Contrast,
 } from 'lucide-react'
 
 export interface ToolInfo {
@@ -278,6 +279,7 @@ export const categories: CategoryInfo[] = [
       { id: 'qr-decode', name: '二维码在线识别', description: '上传或拖拽二维码图片，纯前端秒级解码识别内容', path: '/misc/qr-decode', icon: Scan, keywords: ['二维码解码', '识别二维码', '扫码', 'qr decode', '二维码读取'] },
       { id: 'unit-converter', name: '单位换算器', description: '存储数据 (B/KB/MB/GB) 与前端 CSS (px/rem/em/vw) 单位换算', path: '/misc/unit-converter', icon: Scale, keywords: ['单位换算', 'rem转px', 'px转rem', '存储容量', '数据换算'] },
       { id: 'color', name: '颜色转换', description: 'HEX、RGB、HSL 颜色值互相转换', path: '/misc/color', icon: Palette, keywords: ['颜色', 'color', 'hex', 'rgb', 'hsl', '取色'] },
+      { id: 'contrast-checker', name: '颜色对比度检查', description: '按 WCAG 2.1 标准计算前景色与背景色对比度，实时校验 AA / AAA 无障碍评级与文本可读性预览', path: '/misc/contrast-checker', icon: Contrast, keywords: ['对比度', '颜色对比度', 'wcag', 'contrast', 'contrast checker', 'aa', 'aaa', '无障碍', 'accessibility', 'a11y', '前景色', '背景色', '可读性', 'コントラスト'] },
       { id: 'cron', name: 'Cron 表达式', description: 'Cron 定时表达式生成与解析', path: '/misc/cron', icon: Timer, keywords: ['cron', '定时', '表达式', '任务', 'schedule'] },
       { id: 'password', name: '密码生成', description: '随机密码与安全字符串生成', path: '/misc/password', icon: KeyRound, keywords: ['密码', 'password', '随机', '生成', 'random'] },
       { id: 'qrcode', name: '二维码生成', description: '将文本或网址转为二维码图片', path: '/misc/qrcode', icon: QrCode, keywords: ['二维码', 'qrcode', 'qr', '生成'] },

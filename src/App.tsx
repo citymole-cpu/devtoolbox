@@ -160,6 +160,7 @@ const WebFonts = lazy(() => import('./pages/ref/WebFonts'))
 const QrDecode = lazy(() => import('./pages/misc/QrDecode'))
 const UnitConverter = lazy(() => import('./pages/misc/UnitConverter'))
 const ColorConverter = lazy(() => import('./pages/misc/ColorConverter'))
+const ContrastChecker = lazy(() => import('./pages/misc/ContrastChecker'))
 const CronGenerator = lazy(() => import('./pages/misc/CronGenerator'))
 const PasswordGenerator = lazy(() => import('./pages/misc/PasswordGenerator'))
 const QrCode = lazy(() => import('./pages/misc/QrCode'))
@@ -341,6 +342,7 @@ export default function App() {
         <Route path="/misc/unit-converter" element={<UnitConverter />} />
         <Route path="/misc/timestamp" element={<Navigate to="/convert/timestamp" replace />} />
         <Route path="/misc/color" element={<ColorConverter />} />
+        <Route path="/misc/contrast-checker" element={<ContrastChecker />} />
         <Route path="/misc/cron" element={<CronGenerator />} />
         <Route path="/misc/password" element={<PasswordGenerator />} />
         <Route path="/misc/qrcode" element={<QrCode />} />
