@@ -116,6 +116,7 @@ export const categories: CategoryInfo[] = [
       { id: 'htpasswd-gen', name: '在线 .htpasswd 认证生成', description: 'Nginx 与 Apache HTTP 基础认证密码列表生成', path: '/net/htpasswd', icon: KeyRound, keywords: ['htpasswd', 'basic auth', 'nginx认证', 'apache认证', '密码生成'] },
       { id: 'dns-lookup', name: 'DNS 查询', description: '通过 DoH 在线查询域名 A / AAAA / CNAME / MX / TXT 等记录', path: '/net/dns', icon: Globe, keywords: ['dns', '域名解析', 'doh', 'a记录', 'mx记录', 'txt记录', 'cname'] },
       { id: 'ip-lookup', name: 'IP 查询', description: '查询公网 IP 的归属地、运营商、ASN 与时区', path: '/net/ip', icon: MapPin, keywords: ['ip', 'ip查询', '归属地', '运营商', 'asn', '本机ip', '公网ip'] },
+      { id: 'url-parser', name: 'URL 解析器', description: '拆解 URL 的协议、认证信息、主机、端口、路径、查询参数与锚点，支持逐项复制与参数编辑重拼', path: '/net/url-parser', icon: Link, keywords: ['url', 'url解析', 'url解析器', 'url parser', '网址解析', '链接解析', 'protocol', 'host', 'port', 'pathname', 'query', 'hash', 'fragment', 'ipv6'] },
     ],
   },
   {

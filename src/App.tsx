@@ -48,6 +48,7 @@ const MetaTagsGenerator = lazy(() => import('./pages/net/MetaTagsGenerator'))
 const Htpasswd = lazy(() => import('./pages/net/Htpasswd'))
 const DnsLookup = lazy(() => import('./pages/net/DnsLookup'))
 const IpLookup = lazy(() => import('./pages/net/IpLookup'))
+const UrlParser = lazy(() => import('./pages/net/UrlParser'))
 
 // Encode Tools
 const Base64 = lazy(() => import('./pages/encode/Base64'))
@@ -226,6 +227,7 @@ export default function App() {
         <Route path="/net/htpasswd" element={<Htpasswd />} />
         <Route path="/net/dns" element={<DnsLookup />} />
         <Route path="/net/ip" element={<IpLookup />} />
+        <Route path="/net/url-parser" element={<UrlParser />} />
 
         {/* Encode */}
         <Route path="/encode/base64" element={<Base64 />} />
