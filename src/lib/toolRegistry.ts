@@ -37,6 +37,7 @@ import {
   Tags,
   FileSpreadsheet,
   Contrast,
+  TrendingUp,
 } from 'lucide-react'
 
 export interface ToolInfo {
@@ -278,6 +279,7 @@ export const categories: CategoryInfo[] = [
       { id: 'mock-data', name: '多格式随机数据生成器', description: '一键生成高仿真测试数据集，支持 JSON / YAML / CSV / TSV / TOML 并导出文件', path: '/misc/mock-data', icon: Database, keywords: ['yaml生成', 'csv生成', 'tsv生成', 'toml生成', 'mock数据', '测试数据'] },
       { id: 'renovation-calc', name: '装修建材用量计算器', description: '家庭装修地砖、墙砖、木地板、壁纸、乳胶漆涂料精准耗量与预算估算', path: '/misc/renovation-calc', icon: Home, keywords: ['地砖计算', '墙砖计算', '地板用量', '壁纸计算', '涂料计算', '装修计算器'] },
       { id: 'mortgage-calculator', name: '房贷计算器', description: '等额本息与等额本金房贷月供、总利息、还款明细与提前还款试算', path: '/misc/mortgage-calculator', icon: Calculator, keywords: ['房贷计算器', '贷款计算器', '等额本息', '等额本金', '月供计算', '房贷利率', '提前还款', 'mortgage', 'mortgage calculator', 'loan calculator', '住宅ローン'] },
+      { id: 'compound-interest', name: '复利计算器', description: '输入本金、年利率、投资年限、复利频率与每月定投，计算到期本息总额、总利息与逐年增长明细及曲线图', path: '/misc/compound-interest', icon: TrendingUp, keywords: ['复利计算器', '复利', '投资收益', '理财计算器', '定投计算器', '本息总额', '年金终值', 'compound interest', 'compound interest calculator', 'investment calculator', 'dca', '複利計算機'] },
       { id: 'qr-decode', name: '二维码在线识别', description: '上传或拖拽二维码图片，纯前端秒级解码识别内容', path: '/misc/qr-decode', icon: Scan, keywords: ['二维码解码', '识别二维码', '扫码', 'qr decode', '二维码读取'] },
       { id: 'unit-converter', name: '单位换算器', description: '存储数据 (B/KB/MB/GB) 与前端 CSS (px/rem/em/vw) 单位换算', path: '/misc/unit-converter', icon: Scale, keywords: ['单位换算', 'rem转px', 'px转rem', '存储容量', '数据换算'] },
       { id: 'color', name: '颜色转换', description: 'HEX、RGB、HSL 颜色值互相转换', path: '/misc/color', icon: Palette, keywords: ['颜色', 'color', 'hex', 'rgb', 'hsl', '取色'] },

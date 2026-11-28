@@ -179,6 +179,7 @@ const FileInspector = lazy(() => import('./pages/misc/FileInspector'))
 const MockDataGenerator = lazy(() => import('./pages/misc/MockDataGenerator'))
 const RenovationCalc = lazy(() => import('./pages/misc/RenovationCalc'))
 const MortgageCalculator = lazy(() => import('./pages/misc/MortgageCalculator'))
+const CompoundInterest = lazy(() => import('./pages/misc/CompoundInterest'))
 const DateCalculator = lazy(() => import('./pages/misc/DateCalculator'))
 
 export default function App() {
@@ -363,6 +364,7 @@ export default function App() {
         <Route path="/misc/mock-data" element={<MockDataGenerator />} />
         <Route path="/misc/renovation-calc" element={<RenovationCalc />} />
         <Route path="/misc/mortgage-calculator" element={<MortgageCalculator />} />
+        <Route path="/misc/compound-interest" element={<CompoundInterest />} />
         <Route path="/misc/date-calculator" element={<DateCalculator />} />
 
         {/* 未知路径兜底回首页 */}
