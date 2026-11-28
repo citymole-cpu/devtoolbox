@@ -436,6 +436,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zapbits.xyz/tools/misc/car-loan-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zapbits.xyz/tools/misc/charts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
