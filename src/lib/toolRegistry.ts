@@ -42,6 +42,7 @@ import {
   Volume2,
   Percent,
   Cake,
+  PiggyBank,
 } from 'lucide-react'
 
 export interface ToolInfo {
@@ -285,6 +286,7 @@ export const categories: CategoryInfo[] = [
       { id: 'mortgage-calculator', name: '房贷计算器', description: '等额本息与等额本金房贷月供、总利息、还款明细与提前还款试算', path: '/misc/mortgage-calculator', icon: Calculator, keywords: ['房贷计算器', '贷款计算器', '等额本息', '等额本金', '月供计算', '房贷利率', '提前还款', 'mortgage', 'mortgage calculator', 'loan calculator', '住宅ローン'] },
       { id: 'car-loan-calculator', name: '车贷计算器', description: '输入车价、首付比例、贷款年限与年利率，计算等额本息与等额本金月供、总利息、还款总额与前 12 期明细', path: '/misc/car-loan-calculator', icon: Car, keywords: ['车贷计算器', '汽车贷款', '买车分期', '首付比例', '等额本息', '等额本金', '月供计算', 'car loan', 'auto loan', 'car loan calculator', '自動車ローン'] },
       { id: 'compound-interest', name: '复利计算器', description: '输入本金、年利率、投资年限、复利频率与每月定投，计算到期本息总额、总利息与逐年增长明细及曲线图', path: '/misc/compound-interest', icon: TrendingUp, keywords: ['复利计算器', '复利', '投资收益', '理财计算器', '定投计算器', '本息总额', '年金终值', 'compound interest', 'compound interest calculator', 'investment calculator', 'dca', '複利計算機'] },
+      { id: 'savings-goal-calculator', name: '储蓄目标计算器', description: '输入目标金额、储蓄年限、预期年化收益与已有存款，反推每月需存金额并生成逐年储蓄计划明细', path: '/misc/savings-goal-calculator', icon: PiggyBank, keywords: ['储蓄目标', '储蓄目标计算器', '存钱计划', '月存金额', '定投反推', '理财目标', '存款目标', 'savings goal', 'savings goal calculator', 'monthly savings', '貯蓄目標計算'] },
       { id: 'discount-calculator', name: '折扣计算器', description: '输入原价与折扣率/百分比，实时计算折后价、节省金额与比例，支持多件商品汇总与满 X 减 Y 满减模式', path: '/misc/discount-calculator', icon: Percent, keywords: ['折扣计算器', '打折计算', '折后价', '满减计算', '百分比折扣', '促销计算', '省钱计算', 'discount', 'discount calculator', 'sale price', 'percent off', '割引計算'] },
       { id: 'qr-decode', name: '二维码在线识别', description: '上传或拖拽二维码图片，纯前端秒级解码识别内容', path: '/misc/qr-decode', icon: Scan, keywords: ['二维码解码', '识别二维码', '扫码', 'qr decode', '二维码读取'] },
       { id: 'unit-converter', name: '单位换算器', description: '存储数据 (B/KB/MB/GB) 与前端 CSS (px/rem/em/vw) 单位换算', path: '/misc/unit-converter', icon: Scale, keywords: ['单位换算', 'rem转px', 'px转rem', '存储容量', '数据换算'] },
